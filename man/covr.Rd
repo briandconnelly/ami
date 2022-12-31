@@ -13,5 +13,5 @@ A logical value
 Detect covr
 }
 \examples{
-in_covr()
+using_covr()
 }
