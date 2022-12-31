@@ -1,6 +1,5 @@
 test_that("using_rstudio() works as expected", {
-  skip_if_not_installed("rstudioapi")
-  expect_equal(using_rstudio(), rstudioapi::isAvailable())
+  expect_equal(using_rstudio(), identical(.Platform$GUI, "RStudio"))
 })
 
 test_that("using_rstudio_jobs() works as expected", {
