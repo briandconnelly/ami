@@ -8,6 +8,8 @@
 [![R-CMD-check](https://github.com/briandconnelly/checkenv/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/briandconnelly/checkenv/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/briandconnelly/checkenv/branch/main/graph/badge.svg)](https://app.codecov.io/gh/briandconnelly/checkenv?branch=main)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 checkenv is a collection of lightweight functions that can be used to
