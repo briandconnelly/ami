@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/briandconnelly/checkenv/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/briandconnelly/checkenv/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/briandconnelly/checkenv/branch/main/graph/badge.svg)](https://app.codecov.io/gh/briandconnelly/checkenv?branch=main)
 <!-- badges: end -->
 
 checkenv is a collection of lightweight functions that can be used to
