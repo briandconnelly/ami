@@ -21,5 +21,6 @@ Config/testthat/parallel: true
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-URL: https://github.com/briandconnelly/checkenv
+URL: https://github.com/briandconnelly/checkenv,
+    https://briandconnelly.github.io/checkenv/
 BugReports: https://github.com/briandconnelly/checkenv/issues

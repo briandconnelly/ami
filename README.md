@@ -4,6 +4,8 @@
 # checkenv
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/briandconnelly/checkenv/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/briandconnelly/checkenv/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 checkenv is a collection of lightweight functions that can be used to

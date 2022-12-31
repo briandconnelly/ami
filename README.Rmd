@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # checkenv
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/briandconnelly/checkenv/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/briandconnelly/checkenv/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 checkenv is a collection of lightweight functions that can be used to determine the computing environment in which your code is running.
