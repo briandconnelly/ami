@@ -1,0 +1,23 @@
+Package: checkenv
+Title: Checks for Various Computing Environments
+Version: 0.0.0.9000
+Authors@R: 
+    person("Brian", "Connelly", , "bdc@bconnelly.net", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0002-9948-0379"))
+Description: checkenv is a collection of lightweight functions that can be
+    used to determine the computing environment in which your code is
+    running. This includes Continuous Integration (CI) environments,
+    containers, different operating systems, and more.
+License: MIT + file LICENSE
+Imports: 
+    curl,
+    rlang,
+    utils
+Suggests: 
+    testthat (>= 3.0.0),
+    withr
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
