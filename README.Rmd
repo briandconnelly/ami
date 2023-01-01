@@ -49,7 +49,7 @@ library(checkenv)
 is_online()
 ```
 
-**Alternatives:** [`curl::has_internet()`](https://jeroen.cran.dev/curl/reference/nslookup.html) (used by checkenv), [`testthat::skip_if_offline()`](https://testthat.r-lib.org/reference/skip.html), [`pingr::is_online()`](https://github.com/r-lib/pingr) 
+*Alternatives:* [`curl::has_internet()`](https://jeroen.cran.dev/curl/reference/nslookup.html) (used by checkenv), [`testthat::skip_if_offline()`](https://testthat.r-lib.org/reference/skip.html), [`pingr::is_online()`](https://github.com/r-lib/pingr) 
 
 
 ### Am I using RStudio?
@@ -58,6 +58,7 @@ is_online()
 using_rstudio()
 ```
 
+*Alternatives:* [`rstudioapi::isAvailable()`](https://rstudio.github.io/rstudioapi/reference/isAvailable.html)
 
 ### Am I using macOS? On an Intel Mac?
 
@@ -85,4 +86,4 @@ using_ci()
 using_github_actions()
 ```
 
-**Alternatives:** [`testthat::skip_on_ci()`](https://testthat.r-lib.org/reference/skip.html) (and `on_ci()`), [`testthat::skip_on_travis()`](https://testthat.r-lib.org/reference/skip.html), [`testthat::skip_on_appveyor()`](https://testthat.r-lib.org/reference/skip.html) 
+*Alternatives:* [`testthat::skip_on_ci()`](https://testthat.r-lib.org/reference/skip.html) (and `on_ci()`), [`testthat::skip_on_travis()`](https://testthat.r-lib.org/reference/skip.html), [`testthat::skip_on_appveyor()`](https://testthat.r-lib.org/reference/skip.html) 

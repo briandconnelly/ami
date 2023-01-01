@@ -45,7 +45,7 @@ is_online()
 #> [1] TRUE
 ```
 
-**Alternatives:**
+*Alternatives:*
 [`curl::has_internet()`](https://jeroen.cran.dev/curl/reference/nslookup.html)
 (used by checkenv),
 [`testthat::skip_if_offline()`](https://testthat.r-lib.org/reference/skip.html),
@@ -57,6 +57,9 @@ is_online()
 using_rstudio()
 #> [1] FALSE
 ```
+
+*Alternatives:*
+[`rstudioapi::isAvailable()`](https://rstudio.github.io/rstudioapi/reference/isAvailable.html)
 
 ### Am I using macOS? On an Intel Mac?
 
@@ -87,7 +90,7 @@ using_github_actions()
 #> [1] FALSE
 ```
 
-**Alternatives:**
+*Alternatives:*
 [`testthat::skip_on_ci()`](https://testthat.r-lib.org/reference/skip.html)
 (and `on_ci()`),
 [`testthat::skip_on_travis()`](https://testthat.r-lib.org/reference/skip.html),
