@@ -3,11 +3,14 @@
 \name{using_container}
 \alias{using_container}
 \alias{using_docker_container}
+\alias{using_podman_container}
 \title{Detect container environments}
 \usage{
 using_container()
 
 using_docker_container()
+
+using_podman_container()
 }
 \value{
 A logical value
@@ -18,4 +21,5 @@ Detect container environments
 \examples{
 using_container()
 using_docker_container()
+using_podman_container()
 }
