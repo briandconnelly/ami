@@ -2,6 +2,7 @@
 
 export(is_interactive)
 export(is_online)
+export(on_bioconductor)
 export(on_cran)
 export(using_arm_cpu)
 export(using_ci)
