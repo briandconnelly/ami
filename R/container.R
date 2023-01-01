@@ -29,3 +29,12 @@ using_podman_container <- function() {
   # This may not work 100%
   file.exists("/run/.containerenv")
 }
+
+
+#' @rdname container
+#' @export
+#' @examples
+#' using_kubernetes()
+using_kubernetes <- function() {
+  envvar_set("KUBERNETES_SERVICE_HOST")
+}

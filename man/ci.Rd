@@ -2,9 +2,15 @@
 % Please edit documentation in R/ci.R
 \name{using_ci}
 \alias{using_ci}
+\alias{using_jenkins}
+\alias{using_travis_ci}
 \title{Detect whether running in a CI environment}
 \usage{
 using_ci()
+
+using_jenkins()
+
+using_travis_ci()
 }
 \value{
 A logical value
@@ -14,4 +20,6 @@ Detect whether running in a CI environment
 }
 \examples{
 using_ci()
+using_jenkins()
+using_travis_ci()
 }
