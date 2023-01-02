@@ -4,6 +4,7 @@
 \alias{using_ci}
 \alias{using_jenkins}
 \alias{using_travis_ci}
+\alias{using_gitlab_ci}
 \title{Detect whether running in a CI environment}
 \usage{
 using_ci()
@@ -11,6 +12,8 @@ using_ci()
 using_jenkins()
 
 using_travis_ci()
+
+using_gitlab_ci()
 }
 \value{
 A logical value
@@ -22,4 +25,5 @@ Detect whether running in a CI environment
 using_ci()
 using_jenkins()
 using_travis_ci()
+using_gitlab_ci()
 }

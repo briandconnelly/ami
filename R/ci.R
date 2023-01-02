@@ -27,3 +27,12 @@ using_jenkins <- function() {
 using_travis_ci <- function() {
   envvar_set("TRAVIS")
 }
+
+
+#' @rdname ci
+#' @export
+#' @examples
+#' using_gitlab_ci()
+using_gitlab_ci <- function() {
+  envvar_set("GITLAB_CI")
+}
