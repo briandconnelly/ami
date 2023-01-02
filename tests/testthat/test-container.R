@@ -12,4 +12,3 @@ test_that("using_docker_container() works as expected", {
 test_that("using_podman_container() works as expected", {
   expect_equal(using_podman_container(), file.exists("/run/.containerenv"))
 })
-
