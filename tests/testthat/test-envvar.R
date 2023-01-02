@@ -1,12 +1,26 @@
-test_that("envvar_set", {
-  withr::with_envvar(new = c("CHECKENV_TEST1" = "abcdef"), {
-    expect_true(envvar_set("CHECKENV_TEST1"))
-    expect_equal(get_envvar("CHECKENV_TEST1"), "abcdef")
-    expect_true(envvar_match("CHECKENV_TEST1", "abcdef"))
+test_that("get_envvar() works as expected", {
+  random_string <- paste0(sample(c(letters, LETTERS), 10), collapse = "")
+
+  withr::with_envvar(new = c("CHECKENV_TEST_SET" = random_string), {
+    expect_equal(get_envvar("CHECKENV_TEST_SET"), random_string)
+  })
+
+  withr::with_envvar(new = c("CHECKENV_TEST_NOTSET" = NA), {
+    expect_true(is.na(get_envvar("CHECKENV_TEST_NOTSET")))
   })
 })
 
-test_that("envvar_set", {
-  expect_false(envvar_set("CHECKENV_NOTSET"))
-  expect_true(is.na(get_envvar("CHECKENV_NOTSET")))
+
+test_that("is_envvar_set() works as expected", {
+  random_string <- paste0(sample(c(letters, LETTERS), 10), collapse = "")
+
+  withr::with_envvar(new = c("CHECKENV_TEST_SET" = random_string), {
+    expect_true(is_envvar_set("CHECKENV_TEST_SET"))
+    expect_true(is_envvar_set("CHECKENV_TEST_SET", to = random_string))
+    expect_false(is_envvar_set("CHECKENV_TEST_SET", to = "notthis"))
+  })
+
+  withr::with_envvar(new = c("CHECKENV_TEST_NOTSET" = NA), {
+    expect_false(is_envvar_set("CHECKENV_TEST_NOTSET"))
+  })
 })

@@ -7,5 +7,5 @@
 #' @examples
 #' using_covr()
 using_covr <- function() {
-  envvar_true("R_COVR")
+  is_envvar_set("R_COVR", to = "true")
 }

@@ -7,7 +7,7 @@
 #' @examples
 #' using_ci()
 using_ci <- function() {
-  envvar_set("CI")
+  is_envvar_set("CI")
 }
 
 
@@ -16,7 +16,7 @@ using_ci <- function() {
 #' @examples
 #' using_jenkins()
 using_jenkins <- function() {
-  envvar_set("BUILD_ID")
+  is_envvar_set("BUILD_ID")
 }
 
 
@@ -25,7 +25,7 @@ using_jenkins <- function() {
 #' @examples
 #' using_travis_ci()
 using_travis_ci <- function() {
-  envvar_set("TRAVIS")
+  is_envvar_set("TRAVIS")
 }
 
 
@@ -34,5 +34,5 @@ using_travis_ci <- function() {
 #' @examples
 #' using_gitlab_ci()
 using_gitlab_ci <- function() {
-  envvar_set("GITLAB_CI")
+  is_envvar_set("GITLAB_CI")
 }

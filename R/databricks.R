@@ -7,5 +7,5 @@
 #' @examples
 #' using_databricks()
 using_databricks <- function() {
-  envvar_set("DATABRICKS_RUNTIME_VERSION")
+  is_envvar_set("DATABRICKS_RUNTIME_VERSION")
 }

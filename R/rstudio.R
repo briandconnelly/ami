@@ -15,5 +15,5 @@ using_rstudio <- function() {
 #' @examples
 #' using_rstudio_jobs()
 using_rstudio_jobs <- function() {
-  envvar_set("RSTUDIOAPI_IPC_REQUESTS_FILE")
+  is_envvar_set("RSTUDIOAPI_IPC_REQUESTS_FILE")
 }
