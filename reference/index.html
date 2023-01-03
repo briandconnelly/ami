@@ -41,9 +41,120 @@
     </div>
 
     <div class="section level2">
-      <h2 id="all-functions">All functions<a class="anchor" aria-label="anchor" href="#all-functions"></a></h2>
+      <h2 id="cpu-architecture">CPU Architecture<a class="anchor" aria-label="anchor" href="#cpu-architecture"></a></h2>
+      
+      <p class="section-desc"></p><p>Determine the architecture of the machine being used</p>
+
+      
+    </div><div id="" class="section level2">
       
       
+      
+
+      <dl><dt>
+          
+          <code><a href="cpu.html">using_x86_cpu()</a></code> <code><a href="cpu.html">using_arm_cpu()</a></code> 
+        </dt>
+        <dd>Processor Checks</dd>
+      </dl></div><div class="section level2">
+      <h2 id="operating-systems">Operating Systems<a class="anchor" aria-label="anchor" href="#operating-systems"></a></h2>
+      
+      <p class="section-desc"></p><p>Determine information about the computer’s operating system</p>
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
+          
+          <code><a href="os.html">using_os()</a></code> <code><a href="os.html">using_linux()</a></code> <code><a href="os.html">using_macos()</a></code> <code><a href="os.html">using_solaris()</a></code> <code><a href="os.html">using_windows()</a></code> 
+        </dt>
+        <dd>Tests for operating systems</dd>
+      </dl></div><div class="section level2">
+      <h2 id="containers">Containers<a class="anchor" aria-label="anchor" href="#containers"></a></h2>
+      
+      <p class="section-desc"></p><p>Detect whether code is running in a containerized environment</p>
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
+          
+          <code><a href="container.html">using_container()</a></code> <code><a href="container.html">using_docker_container()</a></code> <code><a href="container.html">using_podman_container()</a></code> <code><a href="container.html">using_kubernetes()</a></code> 
+        </dt>
+        <dd>Detect container environments</dd>
+      </dl></div><div class="section level2">
+      <h2 id="r">R<a class="anchor" aria-label="anchor" href="#r"></a></h2>
+      
+      <p class="section-desc"></p><p>Detect the R environment being used</p>
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
+          
+          <code><a href="rstudio.html">using_rstudio()</a></code> <code><a href="rstudio.html">using_rstudio_jobs()</a></code> 
+        </dt>
+        <dd>RStudio environments</dd>
+      </dl><dl><dt>
+          
+          <code><a href="bioconductor.html">on_bioconductor()</a></code> 
+        </dt>
+        <dd>Detect Bioconductor</dd>
+      </dl><dl><dt>
+          
+          <code><a href="cran.html">on_cran()</a></code> 
+        </dt>
+        <dd>Detect CRAN</dd>
+      </dl><dl><dt>
+          
+          <code><a href="reexports.html">reexports</a></code> <code><a href="reexports.html">is_interactive</a></code> 
+        </dt>
+        <dd>Objects exported from other packages</dd>
+      </dl></div><div class="section level2">
+      <h2 id="continuous-integration">Continuous Integration<a class="anchor" aria-label="anchor" href="#continuous-integration"></a></h2>
+      
+      <p class="section-desc"></p><p>Determine whether code is being run in a continuous integration environment</p>
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
+          
+          <code><a href="ci.html">using_ci()</a></code> <code><a href="ci.html">using_appveyor()</a></code> <code><a href="ci.html">using_github_actions()</a></code> <code><a href="ci.html">using_gitlab_ci()</a></code> <code><a href="ci.html">using_jenkins()</a></code> <code><a href="ci.html">using_travis_ci()</a></code> 
+        </dt>
+        <dd>Detect whether running in a CI environment</dd>
+      </dl></div><div class="section level2">
+      <h2 id="network">Network<a class="anchor" aria-label="anchor" href="#network"></a></h2>
+      
+      <p class="section-desc"></p><p>Determine whether or not the machine is connected to the internet</p>
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
+          
+          <code><a href="is_online.html">is_online()</a></code> 
+        </dt>
+        <dd>Check whether the machine is connected to the internet</dd>
+      </dl></div><div class="section level2">
+      <h2 id="development">Development<a class="anchor" aria-label="anchor" href="#development"></a></h2>
+      
+      <p class="section-desc"></p><p>Detect various development environments</p>
 
       
     </div><div id="" class="section level2">
@@ -58,14 +169,9 @@
         <dd>Detect Bioconductor</dd>
       </dl><dl><dt>
           
-          <code><a href="ci.html">using_ci()</a></code> <code><a href="ci.html">using_appveyor()</a></code> <code><a href="ci.html">using_github_actions()</a></code> <code><a href="ci.html">using_gitlab_ci()</a></code> <code><a href="ci.html">using_jenkins()</a></code> <code><a href="ci.html">using_travis_ci()</a></code> 
+          <code><a href="cran.html">on_cran()</a></code> 
         </dt>
-        <dd>Detect whether running in a CI environment</dd>
-      </dl><dl><dt>
-          
-          <code><a href="container.html">using_container()</a></code> <code><a href="container.html">using_docker_container()</a></code> <code><a href="container.html">using_podman_container()</a></code> <code><a href="container.html">using_kubernetes()</a></code> 
-        </dt>
-        <dd>Detect container environments</dd>
+        <dd>Detect CRAN</dd>
       </dl><dl><dt>
           
           <code><a href="covr.html">using_covr()</a></code> 
@@ -73,41 +179,28 @@
         <dd>Detect covr</dd>
       </dl><dl><dt>
           
-          <code><a href="cpu.html">using_x86_cpu()</a></code> <code><a href="cpu.html">using_arm_cpu()</a></code> 
+          <code><a href="testthat.html">using_testthat()</a></code> 
         </dt>
-        <dd>Processor Checks</dd>
-      </dl><dl><dt>
-          
-          <code><a href="cran.html">on_cran()</a></code> 
-        </dt>
-        <dd>Detect CRAN</dd>
-      </dl><dl><dt>
+        <dd>Detect testthat</dd>
+      </dl></div><div class="section level2">
+      <h2 id="misc">Misc<a class="anchor" aria-label="anchor" href="#misc"></a></h2>
+      
+      <p class="section-desc"></p><p>Additional checks</p>
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
           
           <code><a href="databricks.html">using_databricks()</a></code> 
         </dt>
         <dd>Detect Databricks Runtime Environment</dd>
-      </dl><dl><dt>
-          
-          <code><a href="is_online.html">is_online()</a></code> 
-        </dt>
-        <dd>Check whether the machine is connected to the internet</dd>
-      </dl><dl><dt>
-          
-          <code><a href="os.html">using_os()</a></code> <code><a href="os.html">using_linux()</a></code> <code><a href="os.html">using_macos()</a></code> <code><a href="os.html">using_solaris()</a></code> <code><a href="os.html">using_windows()</a></code> 
-        </dt>
-        <dd>Tests for operating systems</dd>
-      </dl><dl><dt>
-          
-          <code><a href="rstudio.html">using_rstudio()</a></code> <code><a href="rstudio.html">using_rstudio_jobs()</a></code> 
-        </dt>
-        <dd>RStudio environments</dd>
-      </dl><dl><dt>
-          
-          <code><a href="testthat.html">using_testthat()</a></code> 
-        </dt>
-        <dd>Detect testthat</dd>
       </dl></div>
-  </main></div>
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside></div>
 
 
     <footer><div class="pkgdown-footer-left">
