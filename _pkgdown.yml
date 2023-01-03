@@ -2,3 +2,64 @@ url: https://briandconnelly.github.io/checkenv/
 template:
   bootstrap: 5
 
+reference:
+  - title: CPU Architecture
+    desc: Determine the architecture of the machine being used
+    contents:
+    - using_x86_cpu
+    - using_arm_cpu
+
+  - title: Operating Systems
+    desc: Determine information about the computer's operating system
+    contents:
+    - using_os
+    - using_linux
+    - using_macos
+    - using_solaris
+    - using_windows
+
+  - title: Containers
+    desc: Detect whether code is running in a containerized environment
+    contents:
+    - using_container
+    - using_docker_container
+    - using_podman_container
+    - using_kubernetes
+
+  - title: R
+    desc: Detect the R environment being used
+    contents:
+    - using_rstudio
+    - using_rstudio_jobs
+    - on_bioconductor
+    - on_cran
+    - is_interactive
+
+  - title: Continuous Integration
+    desc: Determine whether code is being run in a continuous integration environment
+    contents:
+    - using_ci
+    - using_appveyor
+    - using_github_actions
+    - using_gitlab_ci
+    - using_jenkins
+    - using_travis_ci
+
+  - title: Network
+    desc: Determine whether or not the machine is connected to the internet
+    contents:
+    - is_online
+
+  - title: Development
+    desc: Detect various development environments
+    contents:
+    - on_bioconductor
+    - on_cran
+    - using_covr
+    - using_testthat
+
+  - title: Misc
+    desc: Additional checks
+    contents:
+    - using_databricks
+
