@@ -2,6 +2,7 @@
 % Please edit documentation in R/ci.R
 \name{using_ci}
 \alias{using_ci}
+\alias{using_appveyor}
 \alias{using_github_actions}
 \alias{using_gitlab_ci}
 \alias{using_jenkins}
@@ -9,6 +10,8 @@
 \title{Detect whether running in a CI environment}
 \usage{
 using_ci()
+
+using_appveyor()
 
 using_github_actions()
 
@@ -26,6 +29,7 @@ Detect whether running in a CI environment
 }
 \examples{
 using_ci()
+using_appveyor()
 using_github_actions()
 using_gitlab_ci()
 using_jenkins()
