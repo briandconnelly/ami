@@ -19,6 +19,9 @@
     <loc>https://briandconnelly.github.io/checkenv/reference/bioconductor.html</loc>
   </url>
   <url>
+    <loc>https://briandconnelly.github.io/checkenv/reference/checkenv-package.html</loc>
+  </url>
+  <url>
     <loc>https://briandconnelly.github.io/checkenv/reference/ci.html</loc>
   </url>
   <url>
@@ -43,7 +46,7 @@
     <loc>https://briandconnelly.github.io/checkenv/reference/is_online.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/mac.html</loc>
+    <loc>https://briandconnelly.github.io/checkenv/reference/os.html</loc>
   </url>
   <url>
     <loc>https://briandconnelly.github.io/checkenv/reference/reexports.html</loc>
@@ -53,8 +56,5 @@
   </url>
   <url>
     <loc>https://briandconnelly.github.io/checkenv/reference/testthat.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/windows.html</loc>
   </url>
 </urlset>
