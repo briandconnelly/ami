@@ -26,7 +26,7 @@ reference:
     - using_podman_container
     - using_kubernetes
 
-  - title: R
+  - title: R and RStudio
     desc: Detect the R environment being used
     contents:
     - using_rstudio
