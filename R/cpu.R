@@ -22,5 +22,5 @@ using_x86_cpu <- function() {
 #' @examples
 #' using_arm_cpu()
 using_arm_cpu <- function() {
-  grepl("arm", Sys.info()[["machine"]])
+  grepl("arm|aarch", Sys.info()[["machine"]])
 }
