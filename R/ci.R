@@ -14,17 +14,18 @@ using_ci <- function(service = NULL) {
   if (is.null(service)) {
     is_envvar_set("CI")
   } else {
-    switch(
-      service,
-      appveyor = using_appveyor(),
-      circleci = using_circle_ci(),
-      codebuild = using_codebuild(),
-      github = using_github_actions(),
-      gitlab = using_gitlab_ci(),
-      jenkins = using_jenkins(),
-      travis = using_travis_ci(),
-      FALSE
+    service_checks <- c(
+      "appveyor" = using_appveyor,
+      "circleci" = using_circle_ci,
+      "codebuild" = using_codebuild,
+      "github" = using_github_actions,
+      "gitlab" = using_gitlab_ci,
+      "jenkins" = using_jenkins,
+      "travis" = using_travis_ci
     )
+
+    service <- rlang::arg_match(service, values = names(service_checks))
+    do.call(service_checks[[service]], args = list())
   }
 }
 
