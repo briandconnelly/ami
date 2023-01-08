@@ -1,5 +1,7 @@
 #' @rdname ci
 #' @title Detect whether running in a CI environment
+#' @description `using_ci()` reports whether a continuous integration
+#'   environment is being used.
 #'
 #' @return A logical value
 #' @export
@@ -12,6 +14,7 @@ using_ci <- function() {
 
 
 #' @rdname ci
+#' @description `using_appveyor()` reports whether AppVeyor is being used
 #' @export
 #' @examples
 #' using_appveyor()
@@ -21,6 +24,7 @@ using_appveyor <- function() {
 
 
 #' @rdname ci
+#' @description `using_circle_ci()` reports whether CircleCI is being used
 #' @export
 #' @examples
 #' using_circle_ci()
@@ -40,6 +44,8 @@ using_codebuild <- function() {
 
 
 #' @rdname ci
+#' @description `using_github_actions()` reports whether GitHub Actions is being
+#'   used
 #' @export
 #' @examples
 #' using_github_actions()
@@ -50,6 +56,7 @@ using_github_actions <- function() {
 
 
 #' @rdname ci
+#' @description `using_gitlab_ci()` reports whether GitLab CI/CD is being used
 #' @export
 #' @examples
 #' using_gitlab_ci()
@@ -59,6 +66,7 @@ using_gitlab_ci <- function() {
 
 
 #' @rdname ci
+#' @description `using_jenkins()` reports whether Jenkins is being used
 #' @export
 #' @examples
 #' using_jenkins()
@@ -68,6 +76,7 @@ using_jenkins <- function() {
 
 
 #' @rdname ci
+#' @description `using_travis_ci()` reports whether Travis CI is being used
 #' @export
 #' @examples
 #' using_travis_ci()

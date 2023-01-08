@@ -31,7 +31,23 @@ using_travis_ci()
 A logical value
 }
 \description{
+\code{using_ci()} reports whether a continuous integration
+environment is being used.
+
+\code{using_appveyor()} reports whether AppVeyor is being used
+
+\code{using_circle_ci()} reports whether CircleCI is being used
+
 \code{using_codebuild()} reports whether AWS CodeBuild is being used
+
+\code{using_github_actions()} reports whether GitHub Actions is being
+used
+
+\code{using_gitlab_ci()} reports whether GitLab CI/CD is being used
+
+\code{using_jenkins()} reports whether Jenkins is being used
+
+\code{using_travis_ci()} reports whether Travis CI is being used
 }
 \examples{
 using_ci()
