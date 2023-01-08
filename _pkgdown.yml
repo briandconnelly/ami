@@ -40,6 +40,8 @@ reference:
     contents:
     - using_ci
     - using_appveyor
+    - using_circle_ci
+    - using_codebuild
     - using_github_actions
     - using_gitlab_ci
     - using_jenkins

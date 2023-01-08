@@ -3,6 +3,8 @@
 \name{using_ci}
 \alias{using_ci}
 \alias{using_appveyor}
+\alias{using_circle_ci}
+\alias{using_codebuild}
 \alias{using_github_actions}
 \alias{using_gitlab_ci}
 \alias{using_jenkins}
@@ -12,6 +14,10 @@
 using_ci()
 
 using_appveyor()
+
+using_circle_ci()
+
+using_codebuild()
 
 using_github_actions()
 
@@ -25,11 +31,13 @@ using_travis_ci()
 A logical value
 }
 \description{
-Detect whether running in a CI environment
+\code{using_codebuild()} reports whether AWS CodeBuild is being used
 }
 \examples{
 using_ci()
 using_appveyor()
+using_circle_ci()
+using_codebuild()
 using_github_actions()
 using_gitlab_ci()
 using_jenkins()

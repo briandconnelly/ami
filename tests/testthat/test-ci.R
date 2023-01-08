@@ -11,6 +11,45 @@ test_that("using_ci() works as expected", {
 })
 
 
+test_that("using_appveyor() works as expected", {
+  withr::with_envvar(
+    new = c("APPVEYOR" = "true"),
+    expect_true(using_appveyor())
+  )
+
+  withr::with_envvar(
+    new = c("APPVEYOR" = NA),
+    expect_false(using_appveyor())
+  )
+})
+
+
+test_that("using_circle_ci() works as expected", {
+  withr::with_envvar(
+    new = c("CIRCLECI" = "true"),
+    expect_true(using_circle_ci())
+  )
+
+  withr::with_envvar(
+    new = c("CIRCLECI" = NA),
+    expect_false(using_circle_ci())
+  )
+})
+
+
+test_that("using_codebuild() works as expected", {
+  withr::with_envvar(
+    new = c("CODEBUILD_BUILD_ID" = "true"),
+    expect_true(using_codebuild())
+  )
+
+  withr::with_envvar(
+    new = c("CODEBUILD_BUILD_ID" = NA),
+    expect_false(using_codebuild())
+  )
+})
+
+
 test_that("using_github_actions() works as expected", {
   withr::with_envvar(
     new = c("GITHUB_ACTIONS" = "true"),

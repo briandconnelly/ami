@@ -23,6 +23,25 @@ using_appveyor <- function() {
 #' @rdname ci
 #' @export
 #' @examples
+#' using_circle_ci()
+using_circle_ci <- function() {
+  is_envvar_set("CIRCLECI")
+}
+
+
+#' @rdname ci
+#' @description `using_codebuild()` reports whether AWS CodeBuild is being used
+#' @export
+#' @examples
+#' using_codebuild()
+using_codebuild <- function() {
+  is_envvar_set("CODEBUILD_BUILD_ID")
+}
+
+
+#' @rdname ci
+#' @export
+#' @examples
 #' using_github_actions()
 using_github_actions <- function() {
   # Via https://github.com/r-lib/lintr/blob/3009505944493acdaeeec6ff819acede1f39250a/R/actions.R#L1 # nolint
