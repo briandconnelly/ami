@@ -2,14 +2,30 @@
 #' @title Detect whether running in a CI environment
 #' @description `using_ci()` reports whether a continuous integration
 #'   environment is being used.
+#' @param service If provided, a particular CI service is checked. If not, the
+#'   commonly-used `CI` environment variable is checked.
 #'
 #' @return A logical value
 #' @export
 #'
 #' @examples
 #' using_ci()
-using_ci <- function() {
-  is_envvar_set("CI")
+using_ci <- function(service = NULL) {
+  if (is.null(service)) {
+    is_envvar_set("CI")
+  } else {
+    switch(
+      service,
+      appveyor = using_appveyor(),
+      circleci = using_circle_ci(),
+      codebuild = using_codebuild(),
+      github = using_github_actions(),
+      gitlab = using_gitlab_ci(),
+      jenkins = using_jenkins(),
+      travis = using_travis_ci(),
+      FALSE
+    )
+  }
 }
 
 

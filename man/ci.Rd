@@ -11,7 +11,7 @@
 \alias{using_travis_ci}
 \title{Detect whether running in a CI environment}
 \usage{
-using_ci()
+using_ci(service = NULL)
 
 using_appveyor()
 
@@ -26,6 +26,10 @@ using_gitlab_ci()
 using_jenkins()
 
 using_travis_ci()
+}
+\arguments{
+\item{service}{If provided, a particular CI service is checked. If not, the
+commonly-used \code{CI} environment variable is checked.}
 }
 \value{
 A logical value

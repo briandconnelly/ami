@@ -14,12 +14,18 @@ test_that("using_ci() works as expected", {
 test_that("using_appveyor() works as expected", {
   withr::with_envvar(
     new = c("APPVEYOR" = "true"),
-    expect_true(using_appveyor())
+    {
+      expect_true(using_appveyor())
+      expect_true(using_ci(service = "appveyor"))
+    }
   )
 
   withr::with_envvar(
     new = c("APPVEYOR" = NA),
-    expect_false(using_appveyor())
+    {
+      expect_false(using_appveyor())
+      expect_false(using_ci(service = "appveyor"))
+    }
   )
 })
 
