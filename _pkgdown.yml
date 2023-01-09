@@ -3,6 +3,10 @@ template:
   bootstrap: 5
 
 reference:
+  - title: Environment variables and Global Options
+    contents:
+    - using_envvar
+
   - title: CPU Architecture
     desc: Determine the architecture of the machine being used
     contents:

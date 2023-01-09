@@ -12,7 +12,7 @@
 #' using_ci()
 using_ci <- function(service = NULL) {
   if (is.null(service)) {
-    is_envvar_set("CI")
+    using_envvar("CI")
   } else {
     service_checks <- c(
       "appveyor" = using_appveyor,
@@ -36,7 +36,7 @@ using_ci <- function(service = NULL) {
 #' @examples
 #' using_appveyor()
 using_appveyor <- function() {
-  is_envvar_set("APPVEYOR")
+  using_envvar("APPVEYOR")
 }
 
 
@@ -46,7 +46,7 @@ using_appveyor <- function() {
 #' @examples
 #' using_circle_ci()
 using_circle_ci <- function() {
-  is_envvar_set("CIRCLECI")
+  using_envvar("CIRCLECI")
 }
 
 
@@ -56,7 +56,7 @@ using_circle_ci <- function() {
 #' @examples
 #' using_codebuild()
 using_codebuild <- function() {
-  is_envvar_set("CODEBUILD_BUILD_ID")
+  using_envvar("CODEBUILD_BUILD_ID")
 }
 
 
@@ -68,7 +68,7 @@ using_codebuild <- function() {
 #' using_github_actions()
 using_github_actions <- function() {
   # Via https://github.com/r-lib/lintr/blob/3009505944493acdaeeec6ff819acede1f39250a/R/actions.R#L1 # nolint
-  is_envvar_set("GITHUB_ACTIONS", to = "true")
+  using_envvar("GITHUB_ACTIONS", value = "true")
 }
 
 
@@ -78,7 +78,7 @@ using_github_actions <- function() {
 #' @examples
 #' using_gitlab_ci()
 using_gitlab_ci <- function() {
-  is_envvar_set("GITLAB_CI")
+  using_envvar("GITLAB_CI")
 }
 
 
@@ -88,7 +88,7 @@ using_gitlab_ci <- function() {
 #' @examples
 #' using_jenkins()
 using_jenkins <- function() {
-  is_envvar_set("BUILD_ID")
+  using_envvar("BUILD_ID")
 }
 
 
@@ -98,5 +98,5 @@ using_jenkins <- function() {
 #' @examples
 #' using_travis_ci()
 using_travis_ci <- function() {
-  is_envvar_set("TRAVIS")
+  using_envvar("TRAVIS")
 }

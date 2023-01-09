@@ -7,5 +7,5 @@
 #' @examples
 #' on_bioconductor()
 on_bioconductor <- function() {
-  is_envvar_set("BBS_HOME")
+  using_envvar("BBS_HOME")
 }

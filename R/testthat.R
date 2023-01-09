@@ -7,5 +7,5 @@
 #' @examples
 #' using_testthat()
 using_testthat <- function() {
-  is_envvar_set("TESTTHAT", to = "true")
+  using_envvar("TESTTHAT", value = "true")
 }

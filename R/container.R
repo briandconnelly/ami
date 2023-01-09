@@ -36,5 +36,5 @@ using_podman_container <- function() {
 #' @examples
 #' using_kubernetes()
 using_kubernetes <- function() {
-  is_envvar_set("KUBERNETES_SERVICE_HOST")
+  using_envvar("KUBERNETES_SERVICE_HOST")
 }

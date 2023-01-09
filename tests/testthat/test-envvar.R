@@ -11,16 +11,16 @@ test_that("get_envvar() works as expected", {
 })
 
 
-test_that("is_envvar_set() works as expected", {
+test_that("using_envvar() works as expected", {
   random_string <- paste0(sample(c(letters, LETTERS), 10), collapse = "")
 
   withr::with_envvar(new = c("CHECKENV_TEST_SET" = random_string), {
-    expect_true(is_envvar_set("CHECKENV_TEST_SET"))
-    expect_true(is_envvar_set("CHECKENV_TEST_SET", to = random_string))
-    expect_false(is_envvar_set("CHECKENV_TEST_SET", to = "notthis"))
+    expect_true(using_envvar("CHECKENV_TEST_SET"))
+    expect_true(using_envvar("CHECKENV_TEST_SET", value = random_string))
+    expect_false(using_envvar("CHECKENV_TEST_SET", value = "notthis"))
   })
 
   withr::with_envvar(new = c("CHECKENV_TEST_NOTSET" = NA), {
-    expect_false(is_envvar_set("CHECKENV_TEST_NOTSET"))
+    expect_false(using_envvar("CHECKENV_TEST_NOTSET"))
   })
 })

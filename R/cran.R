@@ -7,5 +7,5 @@
 #' @examples
 #' on_cran()
 on_cran <- function() {
-  !is_envvar_set("NOT_CRAN", to = "true")
+  !using_envvar("NOT_CRAN", value = "true")
 }
