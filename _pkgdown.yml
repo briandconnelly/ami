@@ -6,6 +6,7 @@ reference:
   - title: Environment variables and Global Options
     contents:
     - using_envvar
+    - using_option
 
   - title: CPU Architecture
     desc: Determine the architecture of the machine being used
