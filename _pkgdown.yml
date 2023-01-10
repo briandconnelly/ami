@@ -31,11 +31,12 @@ reference:
     - using_podman_container
     - using_kubernetes
 
-  - title: R and RStudio
+  - title: IDEs and Programming Environment
     desc: Detect the R environment being used
     contents:
     - using_rstudio
     - using_rstudio_jobs
+    - using_vscode
     - on_bioconductor
     - on_cran
     - is_interactive
