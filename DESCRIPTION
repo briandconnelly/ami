@@ -11,6 +11,7 @@ Description: checkenv is a collection of lightweight functions that can be
 License: MIT + file LICENSE
 Imports: 
     curl,
+    glue,
     lifecycle,
     rlang,
     utils

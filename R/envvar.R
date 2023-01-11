@@ -11,10 +11,14 @@
 #'
 #' using_envvar("CI", "true")
 using_envvar <- function(x, value = NULL) {
+  assert_string(x)
+  assert_string(value, null_ok = TRUE)
+
   curr <- get_envvar(x)
   if (is.null(value)) {
     !is.na(curr)
   } else {
+    assert_string(value)
     identical(curr, value)
   }
 }
