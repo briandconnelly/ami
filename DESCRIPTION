@@ -13,9 +13,9 @@ Imports:
     curl,
     glue,
     lifecycle,
-    rlang,
-    utils
-Suggests: 
+    rlang
+Suggests:
+    config,
     covr,
     testthat (>= 3.0.0),
     withr

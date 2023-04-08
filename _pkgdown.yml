@@ -3,8 +3,9 @@ template:
   bootstrap: 5
 
 reference:
-  - title: Environment variables and Global Options
+  - title: Environment variables, Configurations, and Global Options
     contents:
+    - using_config
     - using_envvar
     - using_option
 
