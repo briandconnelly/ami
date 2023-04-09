@@ -7,7 +7,7 @@ check_string <- function(x, na_ok = FALSE, null_ok = FALSE) {
 assert_string <- function(x, na_ok = FALSE, null_ok = FALSE) {
   if (!check_string(x, na_ok, null_ok)) {
     rlang::abort(
-      message = glue::glue("`{deparse(x)}` is not a string (a length one character vector)"), # nolint
+      message = glue::glue("`{deparse(x)}` is not a string (a length one character vector)"), # nolint: line_length_linter
       class = "arg_not_scalar_string"
     )
   }
