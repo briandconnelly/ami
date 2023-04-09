@@ -3,6 +3,8 @@
 #' @description `using_cpu()` checks whether the machine uses the given type
 #'   of processor or not.
 #'
+#' @param arch CPU architecture name. Either `"arm"` or `"x86"`.
+#'
 #' @return A logical value
 #' @export
 #'

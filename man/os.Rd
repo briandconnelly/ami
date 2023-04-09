@@ -19,8 +19,8 @@ using_solaris()
 using_windows()
 }
 \arguments{
-\item{os}{Operating system name. One of \code{linux}, \code{macos}, \code{solaris}, or
-\code{windows}}
+\item{os}{Operating system name. One of \code{"linux"}, \code{"macos"}, \code{"solaris"}, or
+\code{"windows"}}
 }
 \value{
 A logical value

@@ -1,8 +1,8 @@
 #' @rdname os
 #' @title Tests for operating systems
 #'
-#' @param os Operating system name. One of `linux`, `macos`, `solaris`, or
-#'   `windows`
+#' @param os Operating system name. One of `"linux"`, `"macos"`, `"solaris"`, or
+#'   `"windows"`
 #'
 #' @return A logical value
 #' @export

@@ -6,11 +6,14 @@
 \alias{using_arm_cpu}
 \title{Processor Checks}
 \usage{
-using_cpu(arch)
+using_cpu(arch = c("arm", "x86"))
 
 using_x86_cpu()
 
 using_arm_cpu()
+}
+\arguments{
+\item{arch}{CPU architecture name. Either \code{"arm"} or \code{"x86"}.}
 }
 \value{
 A logical value
