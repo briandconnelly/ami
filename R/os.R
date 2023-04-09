@@ -10,7 +10,10 @@
 #' @examples
 #' using_os(os = "linux")
 using_os <- function(os = c("linux", "macos", "solaris", "windows")) {
-  os <- rlang::arg_match(os, multiple = FALSE)
+  os <- rlang::arg_match(
+    os,
+    multiple = FALSE
+  )
 
   switch(tolower(Sys.info()[["sysname"]]),
     darwin = os == "macos",
