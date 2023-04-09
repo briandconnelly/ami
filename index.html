@@ -127,6 +127,19 @@
 <span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
 <p><em>Alternatives:</em> <a href="https://testthat.r-lib.org/reference/skip.html" class="external-link"><code>testthat::skip_on_ci()</code></a> (and <code>on_ci()</code>), <a href="https://testthat.r-lib.org/reference/skip.html" class="external-link"><code>testthat::skip_on_travis()</code></a>, <a href="https://testthat.r-lib.org/reference/skip.html" class="external-link"><code>testthat::skip_on_appveyor()</code></a></p>
 </div>
+<div class="section level3">
+<h3 id="other-environments">Other environments<a class="anchor" aria-label="anchor" href="#other-environments"></a>
+</h3>
+<p>checkenv can be used to check any environment variable. For example, we can see if we’re running in a <a href="https://python-poetry.org" class="external-link">Poetry</a> environment:</p>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/using_envvar.html">using_envvar</a></span><span class="op">(</span><span class="st">"POETRY_ACTIVE"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
+<p>We can also check for package options. Here, we’ll see whether <a href="https://cran.r-project.org/package=boot" class="external-link">boot</a> is configured to do parallel bootstrapping using multiple cores:</p>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/option.html">using_option</a></span><span class="op">(</span><span class="st">"boot.parallel"</span>, <span class="st">"multicore"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
+<p>If you’re using options as part of package development, check out the <a href="https://cran.r-project.org/package=options" class="external-link">options</a> package.</p>
+</div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
