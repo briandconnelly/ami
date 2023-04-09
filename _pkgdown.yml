@@ -38,8 +38,6 @@ reference:
     - using_rstudio
     - using_rstudio_jobs
     - using_vscode
-    - on_bioconductor
-    - on_cran
     - is_interactive
 
   - title: Continuous Integration
