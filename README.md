@@ -95,3 +95,26 @@ using_github_actions()
 (and `on_ci()`),
 [`testthat::skip_on_travis()`](https://testthat.r-lib.org/reference/skip.html),
 [`testthat::skip_on_appveyor()`](https://testthat.r-lib.org/reference/skip.html)
+
+### Other environments
+
+checkenv can be used to check any environment variable. For example, we
+can see if we’re running in a [Poetry](https://python-poetry.org)
+environment:
+
+``` r
+using_envvar("POETRY_ACTIVE")
+#> [1] FALSE
+```
+
+We can also check for package options. Here, we’ll see whether
+[boot](https://cran.r-project.org/package=boot) is configured to do
+parallel bootstrapping using multiple cores:
+
+``` r
+using_option("boot.parallel", "multicore")
+#> [1] FALSE
+```
+
+If you’re using options as part of package development, check out the
+[options](https://cran.r-project.org/package=options) package.
