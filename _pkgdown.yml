@@ -23,6 +23,7 @@ reference:
     - using_macos
     - using_solaris
     - using_windows
+    - using_account
 
   - title: Containers
     desc: Detect whether code is running in a containerized environment
