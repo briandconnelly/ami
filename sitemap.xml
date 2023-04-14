@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/404.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/404.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/LICENSE-text.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/LICENSE.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/authors.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/authors.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/index.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/index.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/account.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/account.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/bioconductor.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/bioconductor.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/checkenv-package.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/ci.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/ci.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/config.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/config.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/container.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/container.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/covr.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/covr.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/cpu.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/cpu.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/cran.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/cran.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/databricks.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/databricks.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/index.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/index.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/is_online.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/is_online.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/option.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/option.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/os.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/os.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/reexports.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/reexports.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/rstudio.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/rstudio.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/sitch-package.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/testthat.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/testthat.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/using_envvar.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/using_envvar.html</loc>
   </url>
   <url>
-    <loc>https://briandconnelly.github.io/checkenv/reference/vscode.html</loc>
+    <loc>https://briandconnelly.github.io/sitch/reference/vscode.html</loc>
   </url>
 </urlset>
