@@ -1,10 +1,10 @@
-Package: checkenv
+Package: sitch
 Title: Checks for Various Computing Environments
 Version: 0.0.0.9000
 Authors@R: 
     person("Brian", "Connelly", , "bdc@bconnelly.net", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0002-9948-0379"))
-Description: checkenv is a collection of lightweight functions that can be
+Description: sitch is a collection of lightweight functions that can be
     used to determine the computing environment in which your code is
     running. This includes Continuous Integration (CI) environments,
     containers, different operating systems, and more.
@@ -24,6 +24,6 @@ Config/testthat/parallel: true
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-URL: https://github.com/briandconnelly/checkenv,
-    https://briandconnelly.github.io/checkenv/
-BugReports: https://github.com/briandconnelly/checkenv/issues
+URL: https://github.com/briandconnelly/sitch,
+    https://briandconnelly.github.io/sitch/
+BugReports: https://github.com/briandconnelly/sitch/issues

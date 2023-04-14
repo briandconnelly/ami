@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/reference/test_package.html#special-files
 
 library(testthat)
-library(checkenv)
+library(sitch)
 
-test_check("checkenv")
+test_check("sitch")
