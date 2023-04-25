@@ -3,19 +3,33 @@
 \name{using_rstudio}
 \alias{using_rstudio}
 \alias{using_rstudio_jobs}
+\alias{using_rstudio_dark_theme}
 \title{RStudio environments}
 \usage{
 using_rstudio()
 
 using_rstudio_jobs()
+
+using_rstudio_dark_theme()
 }
 \value{
 A logical value
 }
 \description{
-RStudio environments
+These functions enable you to determine whether code is being run in the
+presence of various features of the RStudio IDE.
+
+\code{using_rstudio()} determines whether code is being run in
+RStudio
+
+\code{using_rstudio_jobs()} determines whether code is running as
+an \href{https://docs.posit.co/ide/user/ide/guide/tools/jobs.html}{RStudio Job}
+
+\code{using_rstudio_dark_theme()} determines whether a dark theme is
+being used
 }
 \examples{
 using_rstudio()
 using_rstudio_jobs()
+using_rstudio_dark_theme()
 }

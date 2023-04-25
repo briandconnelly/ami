@@ -13,7 +13,8 @@ Imports:
     curl,
     glue,
     lifecycle,
-    rlang
+    rlang,
+    rstudioapi
 Suggests:
     config,
     covr,
