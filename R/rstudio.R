@@ -35,5 +35,9 @@ using_rstudio_jobs <- function() {
 #' @examples
 #' using_rstudio_dark_theme()
 using_rstudio_dark_theme <- function() {
-  isTRUE(rstudioapi::getThemeInfo()$dark)
+  if (rstudioapi::isAvailable()) {
+    isTRUE(rstudioapi::getThemeInfo()$dark)
+  } else {
+    FALSE
+  }
 }

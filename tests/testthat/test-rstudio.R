@@ -13,3 +13,7 @@ test_that("using_rstudio_jobs() works as expected", {
     expect_false(using_rstudio_jobs())
   )
 })
+
+test_that("using_rstudio_dark_theme() returns a boolean", {
+  expect_true(is.logical(using_rstudio_dark_theme()))
+})
