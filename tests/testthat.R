@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/reference/test_package.html#special-files
 
 library(testthat)
-library(sitch)
+library(ami)
 
-test_check("sitch")
+test_check("ami")

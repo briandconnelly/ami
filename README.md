@@ -1,18 +1,18 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# sitch
+# ami
 
 <!-- badges: start -->
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/briandconnelly/sitch/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/briandconnelly/sitch/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/briandconnelly/ami/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/briandconnelly/ami/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/briandconnelly/sitch/branch/main/graph/badge.svg)](https://app.codecov.io/gh/briandconnelly/sitch?branch=main)
+coverage](https://codecov.io/gh/briandconnelly/ami/branch/main/graph/badge.svg)](https://app.codecov.io/gh/briandconnelly/ami?branch=main)
 <!-- badges: end -->
 
-sitch is a collection of lightweight functions that can be used to
+ami is a collection of lightweight functions that can be used to
 determine the computing environment in which your code is running. This
 includes Continuous Integration (CI) environments, containers, different
 operating systems, and more.
@@ -20,18 +20,18 @@ operating systems, and more.
 Similar or identical functions already exist. However, most of these
 functions exist within highly specialized packages, so using several of
 them can quickly create a lot of dependencies for your own projects. The
-goal of sitch is to provide a unified collection of checks that can
-be used to better understand the environments in which your code is
+goal of ami is to provide a unified collection of checks that can be
+used to better understand the environments in which your code is
 running.
 
 ## Installation
 
-If you’d like to try out the development version of sitch, you can
-install directly from GitHub:
+If you’d like to try out the development version of ami, you can install
+directly from GitHub:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("briandconnelly/sitch")
+remotes::install_github("briandconnelly/ami")
 ```
 
 ## Some Examples
@@ -39,7 +39,7 @@ remotes::install_github("briandconnelly/sitch")
 ### Am I online?
 
 ``` r
-library(sitch)
+library(ami)
 
 is_online()
 #> [1] TRUE
@@ -47,7 +47,7 @@ is_online()
 
 *Alternatives:*
 [`curl::has_internet()`](https://jeroen.cran.dev/curl/reference/nslookup.html)
-(used by sitch),
+(used by ami),
 [`testthat::skip_if_offline()`](https://testthat.r-lib.org/reference/skip.html),
 [`pingr::is_online()`](https://github.com/r-lib/pingr)
 
@@ -98,8 +98,8 @@ using_github_actions()
 
 ### Other environments
 
-sitch can be used to check any environment variable. For example, we
-can see if we’re running in a [Poetry](https://python-poetry.org)
+ami can be used to check any environment variable. For example, we can
+see if we’re running in a [Poetry](https://python-poetry.org)
 environment:
 
 ``` r
