@@ -13,7 +13,7 @@
 #' @examples
 #' using_rstudio()
 using_rstudio <- function() {
-  identical(.Platform$GUI, "RStudio")
+  rstudioapi::isAvailable()
 }
 
 #' @rdname rstudio
@@ -24,7 +24,7 @@ using_rstudio <- function() {
 #' @examples
 #' using_rstudio_jobs()
 using_rstudio_jobs <- function() {
-  using_envvar("RSTUDIOAPI_IPC_REQUESTS_FILE")
+  rstudioapi::isJob()
 }
 
 #' @rdname rstudio

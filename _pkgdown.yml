@@ -38,6 +38,7 @@ reference:
     contents:
     - using_rstudio
     - using_rstudio_jobs
+    - using_rstudio_dark_theme
     - using_vscode
     - is_interactive
 
