@@ -44,9 +44,7 @@ remotes::install_github("briandconnelly/ami")
 ### Am I online?
 
 ```{r}
-library(ami)
-
-is_online()
+ami::online()
 ```
 
 *Alternatives:* [`curl::has_internet()`](https://jeroen.cran.dev/curl/reference/nslookup.html) (used by ami), [`testthat::skip_if_offline()`](https://testthat.r-lib.org/reference/skip.html), [`pingr::is_online()`](https://github.com/r-lib/pingr) 
@@ -55,7 +53,7 @@ is_online()
 ### Am I using RStudio?
 
 ```{r}
-using_rstudio()
+ami::using_rstudio()
 ```
 
 *Alternatives:* [`rstudioapi::isAvailable()`](https://rstudio.github.io/rstudioapi/reference/isAvailable.html)
@@ -63,27 +61,27 @@ using_rstudio()
 ### Am I using macOS? On an Intel Mac?
 
 ```{r}
-using_macos()
+ami::using_macos()
 ```
 
 ```{r}
-using_macos() && using_x86_cpu()
+ami::using_macos() && ami::using_x86_cpu()
 ```
 
 
 ### Are we running in a Docker container?
 
 ```{r}
-using_docker_container()
+ami::using_docker_container()
 ```
 
 
 ### Are we using a continuous integration service? GitHub Actions?
 
 ```{r}
-using_ci()
+ami::using_ci()
 
-using_github_actions()
+ami::using_github_actions()
 ```
 
 *Alternatives:* [`testthat::skip_on_ci()`](https://testthat.r-lib.org/reference/skip.html) (and `on_ci()`), [`testthat::skip_on_travis()`](https://testthat.r-lib.org/reference/skip.html), [`testthat::skip_on_appveyor()`](https://testthat.r-lib.org/reference/skip.html) 
@@ -95,14 +93,14 @@ ami can be used to check any environment variable.
 For example, we can see if we're running in a [Poetry](https://python-poetry.org) environment:
 
 ```{r}
-using_envvar("POETRY_ACTIVE")
+ami::using_envvar("POETRY_ACTIVE")
 ```
 
 We can also check for package options.
 Here, we'll see whether [boot](https://cran.r-project.org/package=boot) is configured to do parallel bootstrapping using multiple cores:
 
 ```{r}
-using_option("boot.parallel", "multicore")
+ami::using_option("boot.parallel", "multicore")
 ```
 
 If you're using options as part of package development, check out the [options](https://cran.r-project.org/package=options) package.

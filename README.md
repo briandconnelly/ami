@@ -39,9 +39,7 @@ remotes::install_github("briandconnelly/ami")
 ### Am I online?
 
 ``` r
-library(ami)
-
-is_online()
+ami::online()
 #> [1] TRUE
 ```
 
@@ -54,7 +52,7 @@ is_online()
 ### Am I using RStudio?
 
 ``` r
-using_rstudio()
+ami::using_rstudio()
 #> [1] FALSE
 ```
 
@@ -64,29 +62,29 @@ using_rstudio()
 ### Am I using macOS? On an Intel Mac?
 
 ``` r
-using_macos()
+ami::using_macos()
 #> [1] TRUE
 ```
 
 ``` r
-using_macos() && using_x86_cpu()
+ami::using_macos() && ami::using_x86_cpu()
 #> [1] FALSE
 ```
 
 ### Are we running in a Docker container?
 
 ``` r
-using_docker_container()
+ami::using_docker_container()
 #> [1] FALSE
 ```
 
 ### Are we using a continuous integration service? GitHub Actions?
 
 ``` r
-using_ci()
+ami::using_ci()
 #> [1] FALSE
 
-using_github_actions()
+ami::using_github_actions()
 #> [1] FALSE
 ```
 
@@ -103,7 +101,7 @@ see if we’re running in a [Poetry](https://python-poetry.org)
 environment:
 
 ``` r
-using_envvar("POETRY_ACTIVE")
+ami::using_envvar("POETRY_ACTIVE")
 #> [1] FALSE
 ```
 
@@ -112,7 +110,7 @@ We can also check for package options. Here, we’ll see whether
 parallel bootstrapping using multiple cores:
 
 ``` r
-using_option("boot.parallel", "multicore")
+ami::using_option("boot.parallel", "multicore")
 #> [1] FALSE
 ```
 

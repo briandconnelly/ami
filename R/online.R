@@ -4,7 +4,7 @@
 #' @export
 #'
 #' @examples
-#' is_online()
-is_online <- function() {
+#' online()
+online <- function() {
   curl::has_internet()
 }
