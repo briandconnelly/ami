@@ -58,6 +58,7 @@ reference:
     desc: Determine whether or not the machine is connected to the internet
     contents:
     - online
+    - using_host
 
   - title: Development
     desc: Detect various development environments
