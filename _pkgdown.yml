@@ -33,9 +33,10 @@ reference:
     - using_podman_container
     - using_kubernetes
 
-  - title: IDEs and Programming Environment
+  - title: R, IDEs, and Programming Environment
     desc: Detect the R environment being used
     contents:
+    - using_r_version
     - using_rstudio
     - using_rstudio_jobs
     - using_rstudio_dark_theme
