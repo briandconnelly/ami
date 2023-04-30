@@ -57,7 +57,7 @@ reference:
   - title: Network
     desc: Determine whether or not the machine is connected to the internet
     contents:
-    - is_online
+    - online
 
   - title: Development
     desc: Detect various development environments
