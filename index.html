@@ -85,9 +85,7 @@
 <h3 id="am-i-online">Am I online?<a class="anchor" aria-label="anchor" href="#am-i-online"></a>
 </h3>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/briandconnelly/ami" class="external-link">ami</a></span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="reference/is_online.html">is_online</a></span><span class="op">(</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/online.html">online</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] TRUE</span></span></code></pre></div>
 <p><em>Alternatives:</em> <a href="https://jeroen.cran.dev/curl/reference/nslookup.html" class="external-link"><code>curl::has_internet()</code></a> (used by ami), <a href="https://testthat.r-lib.org/reference/skip.html" class="external-link"><code>testthat::skip_if_offline()</code></a>, <a href="https://github.com/r-lib/pingr" class="external-link"><code>pingr::is_online()</code></a></p>
 </div>
@@ -95,7 +93,7 @@
 <h3 id="am-i-using-rstudio">Am I using RStudio?<a class="anchor" aria-label="anchor" href="#am-i-using-rstudio"></a>
 </h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/rstudio.html">using_rstudio</a></span><span class="op">(</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/rstudio.html">using_rstudio</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
 <p><em>Alternatives:</em> <a href="https://rstudio.github.io/rstudioapi/reference/isAvailable.html" class="external-link"><code>rstudioapi::isAvailable()</code></a></p>
 </div>
@@ -103,27 +101,27 @@
 <h3 id="am-i-using-macos-on-an-intel-mac">Am I using macOS? On an Intel Mac?<a class="anchor" aria-label="anchor" href="#am-i-using-macos-on-an-intel-mac"></a>
 </h3>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/os.html">using_macos</a></span><span class="op">(</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/os.html">using_macos</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] TRUE</span></span></code></pre></div>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/os.html">using_macos</a></span><span class="op">(</span><span class="op">)</span> <span class="op">&amp;&amp;</span> <span class="fu"><a href="reference/cpu.html">using_x86_cpu</a></span><span class="op">(</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/os.html">using_macos</a></span><span class="op">(</span><span class="op">)</span> <span class="op">&amp;&amp;</span> <span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/cpu.html">using_x86_cpu</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="are-we-running-in-a-docker-container">Are we running in a Docker container?<a class="anchor" aria-label="anchor" href="#are-we-running-in-a-docker-container"></a>
 </h3>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/container.html">using_docker_container</a></span><span class="op">(</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/container.html">using_docker_container</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="are-we-using-a-continuous-integration-service-github-actions">Are we using a continuous integration service? GitHub Actions?<a class="anchor" aria-label="anchor" href="#are-we-using-a-continuous-integration-service-github-actions"></a>
 </h3>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/ci.html">using_ci</a></span><span class="op">(</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/ci.html">using_ci</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span>
 <span></span>
-<span><span class="fu"><a href="reference/ci.html">using_github_actions</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/ci.html">using_github_actions</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
 <p><em>Alternatives:</em> <a href="https://testthat.r-lib.org/reference/skip.html" class="external-link"><code>testthat::skip_on_ci()</code></a> (and <code>on_ci()</code>), <a href="https://testthat.r-lib.org/reference/skip.html" class="external-link"><code>testthat::skip_on_travis()</code></a>, <a href="https://testthat.r-lib.org/reference/skip.html" class="external-link"><code>testthat::skip_on_appveyor()</code></a></p>
 </div>
@@ -132,11 +130,11 @@
 </h3>
 <p>ami can be used to check any environment variable. For example, we can see if we’re running in a <a href="https://python-poetry.org" class="external-link">Poetry</a> environment:</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/using_envvar.html">using_envvar</a></span><span class="op">(</span><span class="st">"POETRY_ACTIVE"</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/using_envvar.html">using_envvar</a></span><span class="op">(</span><span class="st">"POETRY_ACTIVE"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
 <p>We can also check for package options. Here, we’ll see whether <a href="https://cran.r-project.org/package=boot" class="external-link">boot</a> is configured to do parallel bootstrapping using multiple cores:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/option.html">using_option</a></span><span class="op">(</span><span class="st">"boot.parallel"</span>, <span class="st">"multicore"</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/option.html">using_option</a></span><span class="op">(</span><span class="st">"boot.parallel"</span>, <span class="st">"multicore"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
 <p>If you’re using options as part of package development, check out the <a href="https://cran.r-project.org/package=options" class="external-link">options</a> package.</p>
 </div>
