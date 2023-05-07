@@ -2,10 +2,13 @@
 % Please edit documentation in R/r.R
 \name{using_r_version}
 \alias{using_r_version}
+\alias{using_latest_r_version}
 \alias{using_interactive_session}
 \title{R session information}
 \usage{
 using_r_version(ver)
+
+using_latest_r_version()
 
 using_interactive_session()
 }
@@ -18,10 +21,14 @@ Get information about the R environment being used.
 \code{using_r_version()} determines whether or not a particular version of R is
 being used.
 
+\code{using_latest_r_version()} determines whether or not the latest stable
+version of R is being used.
+
 \code{using_interactive_session()} determines whether or not R is
-being run interactively. Under the hood, \link[rlang:is_interactive]{rlang::is_interactive} is used.
+being run interactively.
 }
 \examples{
 using_r_version(ver = "4.3.0")
+using_latest_r_version()
 using_interactive_session()
 }

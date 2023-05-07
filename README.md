@@ -12,17 +12,13 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 coverage](https://codecov.io/gh/briandconnelly/ami/branch/main/graph/badge.svg)](https://app.codecov.io/gh/briandconnelly/ami?branch=main)
 <!-- badges: end -->
 
-ami is a collection of lightweight functions that can be used to
-determine the computing environment in which your code is running. This
-includes Continuous Integration (CI) environments, containers, different
-operating systems, and more.
-
-Similar or identical functions already exist. However, most of these
-functions exist within highly specialized packages, so using several of
-them can quickly create a lot of dependencies for your own projects. The
-goal of ami is to provide a unified collection of checks that can be
-used to better understand the environments in which your code is
-running.
+ami provides a unified collection of lightweight checks that can be used
+to better understand the environments in which your code is running.
+This includes different operating systems, Continuous Integration (CI)
+environments, containers, and more. Similar or identical functions
+already exist. However, most of these functions exist within highly
+specialized packages, so using several of them can quickly create a lot
+of dependencies for your own projects.
 
 ## Installation
 
@@ -43,12 +39,6 @@ ami::online()
 #> [1] TRUE
 ```
 
-*Alternatives:*
-[`curl::has_internet()`](https://jeroen.cran.dev/curl/reference/nslookup.html)
-(used by ami),
-[`testthat::skip_if_offline()`](https://testthat.r-lib.org/reference/skip.html),
-[`pingr::is_online()`](https://github.com/r-lib/pingr)
-
 ### Am I using RStudio?
 
 ``` r
@@ -56,15 +46,7 @@ ami::using_rstudio()
 #> [1] FALSE
 ```
 
-*Alternatives:*
-[`rstudioapi::isAvailable()`](https://rstudio.github.io/rstudioapi/reference/isAvailable.html)
-
 ### Am I using macOS? On an Intel Mac?
-
-``` r
-ami::using_macos()
-#> [1] TRUE
-```
 
 ``` r
 ami::using_macos() && ami::using_x86_cpu()
@@ -87,12 +69,6 @@ ami::using_ci()
 ami::using_github_actions()
 #> [1] FALSE
 ```
-
-*Alternatives:*
-[`testthat::skip_on_ci()`](https://testthat.r-lib.org/reference/skip.html)
-(and `on_ci()`),
-[`testthat::skip_on_travis()`](https://testthat.r-lib.org/reference/skip.html),
-[`testthat::skip_on_appveyor()`](https://testthat.r-lib.org/reference/skip.html)
 
 ### Other environments
 

@@ -6,8 +6,8 @@ Authors@R:
            comment = c(ORCID = "0000-0002-9948-0379"))
 Description: ami is a collection of lightweight functions that can be
     used to determine the computing environment in which your code is
-    running. This includes Continuous Integration (CI) environments,
-    containers, different operating systems, and more.
+    running. This includes operating systems, continuous integration (CI)
+    environments, containers, and more.
 License: MIT + file LICENSE
 Imports: 
     curl,
