@@ -68,7 +68,7 @@
 </h1></div>
 <!-- badges: start -->
 
-<p>ami provides a unified collection of lightweight checks that can be used to better understand the environments in which your code is running. This includes different operating systems, Continuous Integration (CI) environments, containers, and more. Similar or identical functions already exist. However, most of these functions exist within highly specialized packages, so using several of them can quickly create a lot of dependencies for your own projects.</p>
+<p>ami (“am I?”) provides a unified collection of lightweight checks that can be used to better understand the environments in which your code is running. This includes different operating systems, Continuous Integration (CI) environments, containers, and more. Similar or identical functions already exist. However, most of these functions exist within highly specialized packages, so using several of them can quickly create a lot of dependencies for your own projects.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -88,14 +88,17 @@
 <span><span class="co">#&gt; [1] TRUE</span></span></code></pre></div>
 </div>
 <div class="section level3">
-<h3 id="am-i-using-rstudio">Am I using RStudio?<a class="anchor" aria-label="anchor" href="#am-i-using-rstudio"></a>
+<h3 id="am-i-using-rstudio-am-i-using-a-dark-theme">Am I using RStudio? Am I using a dark theme?<a class="anchor" aria-label="anchor" href="#am-i-using-rstudio-am-i-using-a-dark-theme"></a>
 </h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/rstudio.html">using_rstudio</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] FALSE</span></span>
+<span></span>
+<span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/rstudio.html">using_rstudio_dark_theme</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
 </div>
 <div class="section level3">
-<h3 id="am-i-using-macos-on-an-intel-mac">Am I using macOS? On an Intel Mac?<a class="anchor" aria-label="anchor" href="#am-i-using-macos-on-an-intel-mac"></a>
+<h3 id="am-i-using-macos-and-an-intel-mac">Am I using macOS and an Intel Mac?<a class="anchor" aria-label="anchor" href="#am-i-using-macos-and-an-intel-mac"></a>
 </h3>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/os.html">using_macos</a></span><span class="op">(</span><span class="op">)</span> <span class="op">&amp;&amp;</span> <span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/cpu.html">using_x86_cpu</a></span><span class="op">(</span><span class="op">)</span></span>
