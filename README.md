@@ -12,13 +12,13 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 coverage](https://codecov.io/gh/briandconnelly/ami/branch/main/graph/badge.svg)](https://app.codecov.io/gh/briandconnelly/ami?branch=main)
 <!-- badges: end -->
 
-ami provides a unified collection of lightweight checks that can be used
-to better understand the environments in which your code is running.
-This includes different operating systems, Continuous Integration (CI)
-environments, containers, and more. Similar or identical functions
-already exist. However, most of these functions exist within highly
-specialized packages, so using several of them can quickly create a lot
-of dependencies for your own projects.
+ami (“am I?”) provides a unified collection of lightweight checks that
+can be used to better understand the environments in which your code is
+running. This includes different operating systems, Continuous
+Integration (CI) environments, containers, and more. Similar or
+identical functions already exist. However, most of these functions
+exist within highly specialized packages, so using several of them can
+quickly create a lot of dependencies for your own projects.
 
 ## Installation
 
@@ -39,14 +39,17 @@ ami::online()
 #> [1] TRUE
 ```
 
-### Am I using RStudio?
+### Am I using RStudio? Am I using a dark theme?
 
 ``` r
 ami::using_rstudio()
 #> [1] FALSE
+
+ami::using_rstudio_dark_theme()
+#> [1] FALSE
 ```
 
-### Am I using macOS? On an Intel Mac?
+### Am I using macOS and an Intel Mac?
 
 ``` r
 ami::using_macos() && ami::using_x86_cpu()
