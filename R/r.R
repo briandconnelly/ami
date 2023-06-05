@@ -6,6 +6,7 @@
 #' `using_r_version()` determines whether or not a particular version of R is
 #' being used.
 #' @param ver Version string
+#' @return A logical value
 #' @export
 #' @examples
 #' using_r_version(ver = "4.3.0")
