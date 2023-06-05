@@ -6,7 +6,7 @@
 \alias{ami-package}
 \title{ami: Checks for Various Computing Environments}
 \description{
-ami is a collection of lightweight functions that can be used to determine the computing environment in which your code is running. This includes operating systems, continuous integration (CI) environments, containers, and more.
+A collection of lightweight functions that can be used to determine the computing environment in which your code is running. This includes operating systems, continuous integration (CI) environments, containers, and more.
 }
 \seealso{
 Useful links:

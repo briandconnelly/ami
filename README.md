@@ -22,6 +22,12 @@ quickly create a lot of dependencies for your own projects.
 
 ## Installation
 
+You can install the latest released version of ami by running:
+
+``` r
+install.packages("ami")
+```
+
 If you’d like to try out the development version of ami, you can install
 directly from GitHub:
 

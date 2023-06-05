@@ -15,6 +15,9 @@ using_interactive_session()
 \arguments{
 \item{ver}{Version string}
 }
+\value{
+A logical value
+}
 \description{
 Get information about the R environment being used.
 
