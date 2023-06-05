@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="ami is a collection of lightweight functions that can be
+<meta name="description" content="A collection of lightweight functions that can be
     used to determine the computing environment in which your code is
     running. This includes operating systems, continuous integration (CI)
     environments, containers, and more.">
@@ -15,7 +15,7 @@
 <script src="deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Checks for Various Computing Environments">
-<meta property="og:description" content="ami is a collection of lightweight functions that can be
+<meta property="og:description" content="A collection of lightweight functions that can be
     used to determine the computing environment in which your code is
     running. This includes operating systems, continuous integration (CI)
     environments, containers, and more.">
@@ -72,8 +72,11 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>If you’d like to try out the development version of ami, you can install directly from GitHub:</p>
+<p>You can install the latest released version of ami by running:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"ami"</span><span class="op">)</span></span></code></pre></div>
+<p>If you’d like to try out the development version of ami, you can install directly from GitHub:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"briandconnelly/ami"</span><span class="op">)</span></span></code></pre></div>
 </div>
@@ -83,14 +86,14 @@
 <div class="section level3">
 <h3 id="am-i-online">Am I online?<a class="anchor" aria-label="anchor" href="#am-i-online"></a>
 </h3>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/networking.html">online</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] TRUE</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="am-i-using-rstudio-am-i-using-a-dark-theme">Am I using RStudio? Am I using a dark theme?<a class="anchor" aria-label="anchor" href="#am-i-using-rstudio-am-i-using-a-dark-theme"></a>
 </h3>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/rstudio.html">using_rstudio</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span>
 <span></span>
@@ -100,21 +103,21 @@
 <div class="section level3">
 <h3 id="am-i-using-macos-and-an-intel-mac">Am I using macOS and an Intel Mac?<a class="anchor" aria-label="anchor" href="#am-i-using-macos-and-an-intel-mac"></a>
 </h3>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/os.html">using_macos</a></span><span class="op">(</span><span class="op">)</span> <span class="op">&amp;&amp;</span> <span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/cpu.html">using_x86_cpu</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="are-we-running-in-a-docker-container">Are we running in a Docker container?<a class="anchor" aria-label="anchor" href="#are-we-running-in-a-docker-container"></a>
 </h3>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/container.html">using_docker_container</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="are-we-using-a-continuous-integration-service-github-actions">Are we using a continuous integration service? GitHub Actions?<a class="anchor" aria-label="anchor" href="#are-we-using-a-continuous-integration-service-github-actions"></a>
 </h3>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/ci.html">using_ci</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span>
 <span></span>
@@ -125,11 +128,11 @@
 <h3 id="other-environments">Other environments<a class="anchor" aria-label="anchor" href="#other-environments"></a>
 </h3>
 <p>ami can be used to check any environment variable. For example, we can see if we’re running in a <a href="https://python-poetry.org" class="external-link">Poetry</a> environment:</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/using_envvar.html">using_envvar</a></span><span class="op">(</span><span class="st">"POETRY_ACTIVE"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
 <p>We can also check for package options. Here, we’ll see whether <a href="https://cran.r-project.org/package=boot" class="external-link">boot</a> is configured to do parallel bootstrapping using multiple cores:</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ami</span><span class="fu">::</span><span class="fu"><a href="reference/option.html">using_option</a></span><span class="op">(</span><span class="st">"boot.parallel"</span>, <span class="st">"multicore"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] FALSE</span></span></code></pre></div>
 <p>If you’re using options as part of package development, check out the <a href="https://cran.r-project.org/package=options" class="external-link">options</a> package.</p>
