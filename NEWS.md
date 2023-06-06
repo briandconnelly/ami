@@ -1,4 +1,4 @@
-# ami (development version)
+# ami 0.1.0.9000
 
 # ami 0.1.0
 
