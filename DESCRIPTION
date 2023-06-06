@@ -1,6 +1,6 @@
 Package: ami
 Title: Checks for Various Computing Environments
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: 
     person("Brian", "Connelly", , "bdc@bconnelly.net", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0002-9948-0379"))
