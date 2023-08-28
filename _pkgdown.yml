@@ -73,4 +73,5 @@ reference:
     desc: Additional checks
     contents:
     - using_databricks
+    - using_nix_shell
 
