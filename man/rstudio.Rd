@@ -4,6 +4,7 @@
 \alias{using_rstudio}
 \alias{using_rstudio_jobs}
 \alias{using_rstudio_dark_theme}
+\alias{using_posit_connect}
 \title{RStudio environments}
 \usage{
 using_rstudio()
@@ -11,13 +12,15 @@ using_rstudio()
 using_rstudio_jobs()
 
 using_rstudio_dark_theme()
+
+using_posit_connect()
 }
 \value{
 A logical value
 }
 \description{
 These functions enable you to determine whether code is being run in the
-presence of various features of the RStudio IDE.
+presence of various features of the RStudio IDE and other Posit products.
 
 \code{using_rstudio()} determines whether code is being run in
 RStudio
@@ -27,9 +30,16 @@ an \href{https://docs.posit.co/ide/user/ide/guide/tools/jobs.html}{RStudio Job}
 
 \code{using_rstudio_dark_theme()} determines whether a dark theme is
 being used
+
+\code{using_posit_connect()} checks whether \url{Posit Connect} is
+being used
 }
 \examples{
 using_rstudio()
 using_rstudio_jobs()
 using_rstudio_dark_theme()
+using_posit_connect()
+}
+\seealso{
+https://docs.posit.co/connect/user/content-settings/#content-vars
 }

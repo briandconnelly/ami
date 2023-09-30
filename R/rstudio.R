@@ -2,7 +2,7 @@
 #' @title RStudio environments
 #' @description
 #' These functions enable you to determine whether code is being run in the
-#' presence of various features of the RStudio IDE.
+#' presence of various features of the RStudio IDE and other Posit products.
 #'
 #' `using_rstudio()` determines whether code is being run in
 #' RStudio
@@ -40,4 +40,24 @@ using_rstudio_dark_theme <- function() {
   } else {
     FALSE
   }
+}
+
+#' @noRd
+#' @description `using_rstudio_product()` checks whether or not the
+#' `RSTUDIO_PRODUCT` environment variable is set
+#' @param name Optional name of a particular product
+using_rstudio_product <- function(name = NULL) {
+  using_envvar("RSTUDIO_PRODUCT", value = name)
+}
+
+#' @rdname rstudio
+#' @description `using_posit_connect()` checks whether [Posit Connect]() is
+#' being used
+#' @seealso https://docs.posit.co/connect/user/content-settings/#content-vars
+#'
+#' @export
+#' @examples
+#' using_posit_connect()
+using_posit_connect <- function() {
+  using_rstudio_product(name = "CONNECT")
 }

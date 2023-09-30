@@ -17,3 +17,25 @@ test_that("using_rstudio_jobs() works as expected", {
 test_that("using_rstudio_dark_theme() returns a boolean", {
   expect_true(is.logical(using_rstudio_dark_theme()))
 })
+
+test_that("using_rstudio_product validates input properly", {
+  expect_error(using_rstudio_product(name = NA_character_))
+  expect_error(using_rstudio_product(name = 1))
+  expect_error(using_rstudio_product(name = FALSE))
+  expect_error(using_rstudio_product(name = c("CONNECT", "WORKBENCH")))
+})
+
+test_that("using_rstudio_product works as expected when `RSTUDIO_PRODUCT` not set", { # nolint: line_length_linter
+  withr::local_envvar(list("USING_RSTUDIO_PRODUCT" = NA))
+  expect_false(using_rstudio_product())
+  expect_false(using_rstudio_product(name = "CONNECT"))
+  expect_false(using_posit_connect())
+})
+
+test_that("using_rstudio_product works as expected when `RSTUDIO_PRODUCT` is set", { # nolint: line_length_linter
+  withr::local_envvar(list("RSTUDIO_PRODUCT" = "CONNECT"))
+  expect_true(using_rstudio_product())
+  expect_true(using_rstudio_product(name = "CONNECT"))
+  expect_false(using_rstudio_product(name = "WORKBENCH"))
+  expect_true(using_posit_connect())
+})
