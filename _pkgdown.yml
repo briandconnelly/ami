@@ -38,6 +38,7 @@ reference:
     contents:
     - using_r_version
     - using_rstudio
+    - using_posit_connect
     - using_rstudio_jobs
     - using_rstudio_dark_theme
     - using_vscode
