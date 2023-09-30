@@ -3,6 +3,7 @@ CMD
 CircleCI
 CodeBuild
 Codecov
+Conda
 Databricks
 GitLab
 Lifecycle

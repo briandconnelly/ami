@@ -1,7 +1,7 @@
 test_that("using_nix_shell validates input properly", {
   expect_error(using_nix_shell(pure = NA_character_))
   expect_error(using_nix_shell(pure = 1))
-  expect_error(using_nux_shell(pure = "pure"))
+  expect_error(using_nix_shell(pure = "pure"))
   expect_error(using_nix_shell(pure = c(TRUE, TRUE)))
 })
 
