@@ -42,6 +42,7 @@ reference:
     - using_rstudio_dark_theme
     - using_vscode
     - using_interactive_session
+    - using_conda
 
   - title: Continuous Integration
     desc: Determine whether code is being run in a continuous integration environment
