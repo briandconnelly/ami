@@ -4,7 +4,7 @@
 \alias{on_cran}
 \title{Detect CRAN}
 \usage{
-on_cran()
+on_cran(CRAN_pattern = "^_R_", n_CRAN_envvars = 5L)
 }
 \value{
 A logical value
@@ -14,4 +14,7 @@ Detect CRAN
 }
 \examples{
 on_cran()
+Sys.setenv("_R_1" = 1)
+Sys.setenv("_R_2" = 2)
+on_cran(n_CRAN_envvars = 2L) # TRUE
 }
