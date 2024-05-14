@@ -13,10 +13,10 @@ on_cran <- function(CRAN_pattern = "^_R_", n_CRAN_envvars = 5L) {
   assert_string(CRAN_pattern)
   assert_integer(n_CRAN_envvars, 1L)
 
-  is_cran <- using_envvar("NOT_CRAN", value = "true")
-  if (!is_cran) { # Not using the envvar
+  not_cran <- using_envvar("NOT_CRAN", value = "true")
+  if (!not_cran) { # Not using the envvar
     index <- grep(CRAN_pattern, names(Sys.getenv()))
-    is_cran <- length(index) >= n_CRAN_envvars
+    not_cran <- length(index) < n_CRAN_envvars
   }
-  is_cran
+  !not_cran
 }
