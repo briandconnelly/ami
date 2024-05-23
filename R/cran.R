@@ -1,6 +1,17 @@
 #' @rdname cran
 #' @title Detect CRAN
 #'
+#' @description This function detects whether the current R environment is a
+#' CRAN machine or not. It returns `FALSE` if the `NOT_CRAN` environment
+#' variable used in "github/r-lib" packages like \pkg{devtools} and
+#' \pkg{testthat} is set to "true". If that variable is not set, the function
+#' examines other environment variables typically set on CRAN machines, as
+#' documented in the issue on this packages' GitHub repository at
+#' \url{https://github.com/briandconnelly/ami/issues/14}.
+#'
+#' @param CRAN_pattern String to match against environment variables.
+#' @param n_CRAN_envvars If at least this number of environment variables match
+#' the `CRAN_pattern`, `on_cran()` returns `TRUE`.
 #' @return A logical value
 #' @export
 #'

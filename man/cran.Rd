@@ -6,11 +6,23 @@
 \usage{
 on_cran(CRAN_pattern = "^_R_", n_CRAN_envvars = 5L)
 }
+\arguments{
+\item{CRAN_pattern}{String to match against environment variables.}
+
+\item{n_CRAN_envvars}{If at least this number of environment variables match
+the \code{CRAN_pattern}, \code{on_cran()} returns \code{TRUE}.}
+}
 \value{
 A logical value
 }
 \description{
-Detect CRAN
+This function detects whether the current R environment is a
+CRAN machine or not. It returns \code{FALSE} if the \code{NOT_CRAN} environment
+variable used in "github/r-lib" packages like \pkg{devtools} and
+\pkg{testthat} is set to "true". If that variable is not set, the function
+examines other environment variables typically set on CRAN machines, as
+documented in the issue on this packages' GitHub repository at
+\url{https://github.com/briandconnelly/ami/issues/14}.
 }
 \examples{
 on_cran()
