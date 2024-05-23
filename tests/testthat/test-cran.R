@@ -10,6 +10,8 @@ test_that("on_cran() works as expected", {
   )
 
   # Not on CRAN because default `n_CRAN_envvars` is 5:
+  # (And 'NOT_CRAN = NULL' removes that "NOT_CRAN" envvar, so the function jumps
+  # to testing envvars actually set on CRAN machines.)
   withr::with_envvar(
     new = list("_R_1" = 1, "_R_2" = 2, "NOT_CRAN" = NULL),
     expect_false(on_cran())
