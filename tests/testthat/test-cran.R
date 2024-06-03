@@ -1,35 +1,27 @@
 test_that("on_cran() works as expected", {
+  # envvar set by default in testthat:
+  expect_true(using_envvar("NOT_CRAN", value = "true"))
+  expect_false(on_cran())
+
+  # But R CMD check is by default `--as-cran`, which sets enough "_R_..."
+  # envvars to pass `on_cran()` tests:
   withr::with_envvar(
-    new = c("NOT_CRAN" = "true"),
-    expect_false(on_cran())
+    new = c("NOT_CRAN" = "false"),
+    {
+      expect_false(using_envvar("NOT_CRAN", value = "true"))
+      expect_true(on_cran())
+    }
   )
 
+  # Use a custom `CRAN_pattern` to test all cases. the first fails because
+  # default `n_CRAN_envvars` is 5:
   withr::with_envvar(
-    new = c("NOT_CRAN" = NA),
-    expect_false(on_cran())
-  )
-
-  # Not on CRAN because default `n_CRAN_envvars` is 5:
-  # (And 'NOT_CRAN = NULL' removes that "NOT_CRAN" envvar, so the function jumps
-  # to testing envvars actually set on CRAN machines.)
-  withr::with_envvar(
-    new = list("_R_1" = 1, "_R_2" = 2, "NOT_CRAN" = NULL),
-    expect_false(on_cran())
-  )
+    new = list("_A_1" = 1, "_A_2" = 2, "NOT_CRAN" = "false"),
+    expect_false(on_cran(CRAN_pattern = "_A_"))
+    )
 
   withr::with_envvar(
-    new = list("_R_1" = 1, "_R_2" = 2, "NOT_CRAN" = NULL),
-    expect_true(on_cran(n_CRAN_envvars = 2L))
-  )
-
-  # Not on CRAN because default `CRAN_pattern` is "^_R_":
-  withr::with_envvar(
-    new = list("_A_1" = 1, "_A_2" = 2, "NOT_CRAN" = NULL),
-    expect_false(on_cran(n_CRAN_envvars = 2L))
-  )
-
-  withr::with_envvar(
-    new = list("_A_1" = 1, "_A_2" = 2, "NOT_CRAN" = NULL),
-    expect_true(on_cran(CRAN_pattern = "^_A_", n_CRAN_envvars = 2L))
+    new = list("_A_1" = 1, "_A_2" = 2, "NOT_CRAN" = "false"),
+    expect_true(on_cran(CRAN_pattern = "_A_", n_CRAN_envvars = 2L))
   )
 })
