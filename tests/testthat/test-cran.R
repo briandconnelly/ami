@@ -21,11 +21,11 @@ test_that("on_cran() works as expected", {
   # default `n_CRAN_envvars` is 5:
   withr::with_envvar(
     new = list("_A_1" = 1, "_A_2" = 2, "NOT_CRAN" = "false"),
-    expect_false(on_cran(CRAN_pattern = "_A_"))
+    expect_false(on_cran(cran_pattern = "_A_"))
     )
 
   withr::with_envvar(
     new = list("_A_1" = 1, "_A_2" = 2, "NOT_CRAN" = "false"),
-    expect_true(on_cran(CRAN_pattern = "_A_", n_CRAN_envvars = 2L))
+    expect_true(on_cran(cran_pattern = "_A_", n_cran_envvars = 2L))
   )
 })

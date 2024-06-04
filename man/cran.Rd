@@ -4,13 +4,13 @@
 \alias{on_cran}
 \title{Detect CRAN}
 \usage{
-on_cran(CRAN_pattern = "^_R_", n_CRAN_envvars = 5L)
+on_cran(cran_pattern = "^_R_", n_cran_envvars = 5L)
 }
 \arguments{
-\item{CRAN_pattern}{String to match against environment variables.}
+\item{cran_pattern}{String to match against environment variables.}
 
-\item{n_CRAN_envvars}{If at least this number of environment variables match
-the \code{CRAN_pattern}, \code{on_cran()} returns \code{TRUE}.}
+\item{n_cran_envvars}{If at least this number of environment variables match
+the \code{cran_pattern}, \code{on_cran()} returns \code{TRUE}.}
 }
 \value{
 A logical value
@@ -28,5 +28,5 @@ documented in the issue on this packages' GitHub repository at
 on_cran()
 Sys.setenv("_R_1" = 1)
 Sys.setenv("_R_2" = 2)
-on_cran(n_CRAN_envvars = 2L) # TRUE
+on_cran(n_cran_envvars = 2L) # TRUE
 }
