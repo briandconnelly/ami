@@ -19,6 +19,7 @@ test_that("on_cran() works as expected", {
       } else {
         expect_false(on_cran()) # testthat
       }
+    }
   )
 
   # Use a custom `CRAN_pattern` to test all cases. the first fails because
