@@ -7,14 +7,18 @@ test_that("on_cran() works as expected", {
     }
   )
 
-  # But R CMD check is by default `--as-cran`, which sets enough "_R_..."
-  # envvars to pass `on_cran()` tests:
   withr::with_envvar(
     new = c("NOT_CRAN" = "false"),
     {
       expect_false(using_envvar("NOT_CRAN", value = "true"))
-      expect_true(on_cran())
-    }
+      # R CMD check, and therefore also `rcmdcheck::rcmdcheck`, sets enough
+      # "_R_..." envvars to pass `on_cran()` tests, but `testthat` sets none.
+      n <- length(grep("_R_", names(Sys.getenv()), fixed = TRUE))
+      if (n > 0L) {
+        expect_true(on_cran()) # R CMD check / CRAN
+      } else {
+        expect_false(on_cran()) # testthat
+      }
   )
 
   # Use a custom `CRAN_pattern` to test all cases. the first fails because
