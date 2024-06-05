@@ -12,9 +12,13 @@ test_that("on_cran() works as expected", {
     {
       expect_false(using_envvar("NOT_CRAN", value = "true"))
       # R CMD check, and therefore also `rcmdcheck::rcmdcheck`, sets enough
-      # "_R_..." envvars to pass `on_cran()` tests, but `testthat` sets none.
+      # "_R_..." envvars to pass `on_cran()` tests, but `testthat` generally
+      # sets only one. Note that can't use `using_testthat()` here, because R
+      # CMD check loads testthat to runs tests, and so `using_testthat()` is
+      # always TRUE.
+      expect_true(using_testthat())
       n <- length(grep("_R_", names(Sys.getenv()), fixed = TRUE))
-      if (n > 0L) {
+      if (n > 1L) {
         expect_true(on_cran()) # R CMD check / CRAN
       } else {
         expect_false(on_cran()) # testthat
