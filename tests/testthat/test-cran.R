@@ -19,7 +19,7 @@ test_that("on_cran() works as expected", {
       expect_true(using_testthat())
       n <- length(grep("_R_", names(Sys.getenv()), fixed = TRUE))
       if (n > 1L) {
-        expect_true(on_cran()) # R CMD check / CRAN
+        expect_true(on_cran(n_cran_envvars = n)) # R CMD check / CRAN
       } else {
         expect_false(on_cran()) # testthat
       }
