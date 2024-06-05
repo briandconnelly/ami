@@ -20,13 +20,13 @@
 #' Sys.setenv("_R_1" = 1)
 #' Sys.setenv("_R_2" = 2)
 #' on_cran(n_cran_envvars = 2L) # TRUE
-on_cran <- function(cran_pattern = "^_R_", n_cran_envvars = 5L) {
+on_cran <- function(cran_pattern = "_R_", n_cran_envvars = 5L) {
   assert_string(cran_pattern)
   assert_integer(n_cran_envvars, 1L)
 
   not_cran <- using_envvar("NOT_CRAN", value = "true")
   if (!not_cran) { # Not using the envvar
-    index <- grep(cran_pattern, names(Sys.getenv()))
+    index <- grep(cran_pattern, names(Sys.getenv()), fixed = TRUE)
     not_cran <- length(index) < n_cran_envvars
   }
   !not_cran

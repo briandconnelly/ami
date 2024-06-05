@@ -4,7 +4,7 @@
 \alias{on_cran}
 \title{Detect CRAN}
 \usage{
-on_cran(cran_pattern = "^_R_", n_cran_envvars = 5L)
+on_cran(cran_pattern = "_R_", n_cran_envvars = 5L)
 }
 \arguments{
 \item{cran_pattern}{String to match against environment variables.}
