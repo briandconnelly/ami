@@ -31,7 +31,7 @@ test_that("on_cran() works as expected", {
   withr::with_envvar(
     new = list("_A_1" = 1, "_A_2" = 2, "NOT_CRAN" = "false"),
     expect_false(on_cran(cran_pattern = "_A_"))
-    )
+  )
 
   withr::with_envvar(
     new = list("_A_1" = 1, "_A_2" = 2, "NOT_CRAN" = "false"),
