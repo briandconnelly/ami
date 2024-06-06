@@ -13,3 +13,9 @@ assert_string <- function(x, na_ok = FALSE, null_ok = FALSE) {
   }
   invisible(x)
 }
+
+assert_integer <- function(x, len = 1L, null_ok = FALSE) {
+  rlang::is_integerish(x, n = len) ||
+    (length(x) == 1L && is.na(x) && isTRUE(null_ok)) ||
+    (is.null(x) && isTRUE(null_ok))
+}

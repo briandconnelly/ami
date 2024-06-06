@@ -20,5 +20,10 @@ Useful links:
 \author{
 \strong{Maintainer}: Brian Connelly \email{bdc@bconnelly.net} (\href{https://orcid.org/0000-0002-9948-0379}{ORCID}) [copyright holder]
 
+Other contributors:
+\itemize{
+  \item Mark Padgham \email{mark.padgham@email.com} (\href{https://orcid.org/0000-0003-2172-5265}{ORCID}) [contributor]
+}
+
 }
 \keyword{internal}
