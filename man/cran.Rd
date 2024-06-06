@@ -26,7 +26,8 @@ documented in the issue on this packages' GitHub repository at
 }
 \examples{
 on_cran()
-Sys.setenv("_R_1" = 1)
-Sys.setenv("_R_2" = 2)
-on_cran(n_cran_envvars = 2L) # TRUE
+withr::with_envvar (
+  list ("_R_1" = 1, "_R_2" = 2),
+  on_cran(n_cran_envvars = 2L)
+)
 }

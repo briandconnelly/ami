@@ -17,9 +17,10 @@
 #'
 #' @examples
 #' on_cran()
-#' Sys.setenv("_R_1" = 1)
-#' Sys.setenv("_R_2" = 2)
-#' on_cran(n_cran_envvars = 2L) # TRUE
+#' withr::with_envvar (
+#'   list ("_R_1" = 1, "_R_2" = 2),
+#'   on_cran(n_cran_envvars = 2L)
+#' )
 on_cran <- function(cran_pattern = "_R_", n_cran_envvars = 5L) {
   assert_string(cran_pattern)
   assert_integer(n_cran_envvars, 1L)
