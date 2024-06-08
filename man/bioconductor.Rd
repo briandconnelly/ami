@@ -15,3 +15,6 @@ Detect Bioconductor
 \examples{
 on_bioconductor()
 }
+\references{
+Check the Bioconductor Build System: https://github.com/Bioconductor/BBS/
+}
