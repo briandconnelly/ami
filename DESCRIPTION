@@ -5,7 +5,9 @@ Authors@R: c(
     person("Brian", "Connelly", , "bdc@bconnelly.net", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0002-9948-0379")),
     person("Mark", "Padgham", , "mark.padgham@email.com", role = c("ctb"),
-           comment = c(ORCID = "0000-0003-2172-5265"))
+           comment = c(ORCID = "0000-0003-2172-5265")),
+           person("Lluís", "Revilla Sancho", , "lluis.revilla@gmail.com", role = c("ctb"),
+           comment = c(ORCID = "0000-0001-9747-2570"))
   )
 Description: A collection of lightweight functions that can be
     used to determine the computing environment in which your code is
