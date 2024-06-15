@@ -26,8 +26,8 @@ documented in the issue on this packages' GitHub repository at
 }
 \examples{
 on_cran()
-withr::with_envvar (
-  list ("NOT_CRAN" = "false", "_R_1" = 1, "_R_2" = 2),
+withr::with_envvar(
+  list("NOT_CRAN" = "false", "_R_1" = 1, "_R_2" = 2),
   on_cran(n_cran_envvars = 2L)
 )
 }

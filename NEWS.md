@@ -1,5 +1,7 @@
 # ami 0.1.0.9000
 
+* `on_cran()` now checks a more robust set of environment variables (#15)
+* `on_bioconductor()` now checks the proper environment variable (#19)
 * Added `using_nix_shell()` for detecting [Nix shell environments](https://nixos.org/manual/nix/unstable/command-ref/nix-shell.html)
 
 # ami 0.1.0
