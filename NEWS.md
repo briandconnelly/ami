@@ -1,3 +1,5 @@
+# ami 0.1.1
+
 # ami 0.1.0.9000
 
 * `on_cran()` now checks a more robust set of environment variables (#15)
