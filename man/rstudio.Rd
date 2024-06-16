@@ -31,8 +31,8 @@ an \href{https://docs.posit.co/ide/user/ide/guide/tools/jobs.html}{RStudio Job}
 \code{using_rstudio_dark_theme()} determines whether a dark theme is
 being used
 
-\code{using_posit_connect()} checks whether \url{Posit Connect} is
-being used
+\code{using_posit_connect()} checks whether \href{https://posit.co/products/enterprise/connect/}{Posit Connect}
+is being used
 }
 \examples{
 using_rstudio()

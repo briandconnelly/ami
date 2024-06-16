@@ -51,8 +51,10 @@ using_rstudio_product <- function(name = NULL) {
 }
 
 #' @rdname rstudio
-#' @description `using_posit_connect()` checks whether [Posit Connect]() is
-#' being used
+# nolint start
+#' @description `using_posit_connect()` checks whether [Posit Connect](https://posit.co/products/enterprise/connect/)
+# nolint end
+#' is being used
 #' @seealso https://docs.posit.co/connect/user/content-settings/#content-vars
 #'
 #' @export
