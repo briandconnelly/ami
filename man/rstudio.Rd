@@ -2,18 +2,31 @@
 % Please edit documentation in R/rstudio.R
 \name{using_rstudio}
 \alias{using_rstudio}
+\alias{using_rstudio_desktop}
+\alias{using_rstudio_server}
+\alias{using_rstudio_workbench}
 \alias{using_rstudio_jobs}
 \alias{using_rstudio_dark_theme}
 \alias{using_posit_connect}
 \title{RStudio environments}
 \usage{
-using_rstudio()
+using_rstudio(mode = "any")
+
+using_rstudio_desktop()
+
+using_rstudio_server()
+
+using_rstudio_workbench()
 
 using_rstudio_jobs()
 
 using_rstudio_dark_theme()
 
 using_posit_connect()
+}
+\arguments{
+\item{mode}{Optional argument specifying whether RStudio is being used in
+\code{"desktop"} mode or in \code{"server"}/\code{"workbench"} mode.}
 }
 \value{
 A logical value
@@ -22,8 +35,10 @@ A logical value
 These functions enable you to determine whether code is being run in the
 presence of various features of the RStudio IDE and other Posit products.
 
-\code{using_rstudio()} determines whether code is being run in
-RStudio
+\code{using_rstudio()} determines whether code is being run in RStudio.
+\code{using_rstudio_desktop()}, \code{using_rstudio_server()}, and
+\code{using_rstudio_workbench()} are helpers to determine whether those specific
+environments are being used.
 
 \code{using_rstudio_jobs()} determines whether code is running as
 an \href{https://docs.posit.co/ide/user/ide/guide/tools/jobs.html}{RStudio Job}

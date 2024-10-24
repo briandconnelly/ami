@@ -1,5 +1,23 @@
+test_that("using_rstudio() validates input properly", {
+  expect_error(using_rstudio(mode = NA))
+  expect_error(using_rstudio(mode = NA_character_))
+  expect_error(using_rstudio(mode = NULL))
+  expect_error(using_rstudio(mode = "not_a_mode"))
+  expect_error(using_rstudio(mode = c("server", "desktop")))
+})
+
 test_that("using_rstudio() works as expected", {
-  expect_equal(using_rstudio(), identical(.Platform$GUI, "RStudio"))
+  expect_equal(using_rstudio(), rstudioapi::isAvailable())
+
+  if (rstudioapi::isAvailable()) {
+    expect_equal(using_rstudio_desktop(), rstudioapi::getMode() == "desktop")
+    expect_equal(using_rstudio_server(), rstudioapi::getMode() == "server")
+    expect_equal(using_rstudio_workbench(), rstudioapi::getMode() == "server")
+  } else {
+    expect_false(using_rstudio_desktop())
+    expect_false(using_rstudio_server())
+    expect_false(using_rstudio_workbench())
+  }
 })
 
 test_that("using_rstudio_jobs() works as expected", {
