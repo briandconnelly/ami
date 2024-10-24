@@ -76,4 +76,5 @@ reference:
     contents:
     - using_databricks
     - using_nix_shell
+    - using_quarto
 
