@@ -1,84 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://briandconnelly.github.io/ami/404.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/index.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/account.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/ami-package.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/bioconductor.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/ci.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/conda.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/config.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/container.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/covr.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/cpu.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/cran.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/databricks.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/networking.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/nix.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/option.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/os.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/r.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/rstudio.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/testthat.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/using_envvar.html</loc>
-  </url>
-  <url>
-    <loc>https://briandconnelly.github.io/ami/reference/vscode.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://briandconnelly.github.io/ami/404.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/LICENSE-text.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/LICENSE.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/authors.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/index.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/news/index.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/account.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/ami-package.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/bioconductor.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/ci.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/conda.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/config.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/container.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/covr.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/cpu.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/cran.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/databricks.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/index.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/networking.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/nix.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/option.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/os.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/r.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/rstudio.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/testthat.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/using_envvar.html</loc></url>
+<url><loc>https://briandconnelly.github.io/ami/reference/vscode.html</loc></url>
 </urlset>
+
