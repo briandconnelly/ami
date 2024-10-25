@@ -1,4 +1,4 @@
-# ami (development version)
+# ami 0.2.0
 
 * Added `using_quarto()` for detecting whether code is running as part of a Quarto document (#25)
 * `using_rstudio()` gains a `mode` argument, which can specify a particular RStudio environment (desktop, server, or workbench). These can also be checked via new helper functions `using_rstudio_desktop()`, `using_rstudio_server()`, and `using_rstudio_workbench()`. (#24)
