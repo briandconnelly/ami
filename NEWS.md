@@ -1,5 +1,8 @@
 # ami (development version)
 
+* Added `using_positron()` and helpers `using_positron_desktop()` and `using_positron_server()` to detect the Positron IDE.
+
+
 # ami 0.2.0
 
 * Added `using_quarto()` for detecting whether code is running as part of a Quarto document (#25)
