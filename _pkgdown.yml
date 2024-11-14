@@ -44,6 +44,7 @@ reference:
     - using_vscode
     - using_interactive_session
     - using_conda
+    - using_positron
 
   - title: Continuous Integration
     desc: Determine whether code is being run in a continuous integration environment
