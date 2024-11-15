@@ -4,5 +4,5 @@
 
 * This is a minor update that introduces a few new functions
 * Tested with [ubuntu, macos, and windows] and [release, devel, and oldrel-1]
-* win-builder check: https://win-builder.r-project.org/8p8JO0w26Q2t/
+* win-builder check: https://win-builder.r-project.org/ez247rAX61Kh/
 

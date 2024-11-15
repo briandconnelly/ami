@@ -52,9 +52,6 @@ ami::online()
 ``` r
 ami::using_rstudio()
 #> [1] FALSE
-```
-
-``` r
 
 ami::using_rstudio_dark_theme()
 #> [1] FALSE
@@ -79,9 +76,6 @@ ami::using_docker_container()
 ``` r
 ami::using_ci()
 #> [1] FALSE
-```
-
-``` r
 
 ami::using_github_actions()
 #> [1] FALSE

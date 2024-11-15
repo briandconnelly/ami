@@ -1,7 +1,7 @@
 # ami (development version)
 
 * Added `using_positron()` and helpers `using_positron_desktop()` and `using_positron_server()` to detect the Positron IDE (#29)
-* Added `using_python_venv()` to detect Python virtual environments
+* Added `using_python_venv()` to detect Python virtual environments (#30)
 
 
 # ami 0.2.0
