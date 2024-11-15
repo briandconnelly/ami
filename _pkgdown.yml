@@ -41,10 +41,11 @@ reference:
     - using_posit_connect
     - using_rstudio_jobs
     - using_rstudio_dark_theme
+    - using_positron
     - using_vscode
     - using_interactive_session
     - using_conda
-    - using_positron
+    - using_python_venv
 
   - title: Continuous Integration
     desc: Determine whether code is being run in a continuous integration environment
