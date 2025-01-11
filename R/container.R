@@ -7,7 +7,7 @@
 #' @examples
 #' using_container()
 using_container <- function() {
-  using_docker_container() || using_podman_container()
+  using_docker_container() || using_podman_container() || using_runpod()
 }
 
 
@@ -37,4 +37,13 @@ using_podman_container <- function() {
 #' using_kubernetes()
 using_kubernetes <- function() {
   using_envvar("KUBERNETES_SERVICE_HOST")
+}
+
+
+#' @rdname container
+#' @export
+#' @examples
+#' using_runpod()
+using_runpod <- function() {
+  using_envvar("RUNPOD_POD_ID")
 }

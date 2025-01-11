@@ -24,3 +24,16 @@ test_that("using_kubernetes() works as expected", {
     expect_false(using_kubernetes())
   )
 })
+
+
+test_that("using_runpod() works as expected", {
+  withr::with_envvar(
+    new = c("RUNPOD_POD_ID" = "1234567"),
+    expect_true(using_runpod())
+  )
+
+  withr::with_envvar(
+    new = c("RUNPOD_POD_ID" = NA),
+    expect_false(using_runpod())
+  )
+})

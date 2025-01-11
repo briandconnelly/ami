@@ -5,6 +5,7 @@
 \alias{using_docker_container}
 \alias{using_podman_container}
 \alias{using_kubernetes}
+\alias{using_runpod}
 \title{Detect container environments}
 \usage{
 using_container()
@@ -14,6 +15,8 @@ using_docker_container()
 using_podman_container()
 
 using_kubernetes()
+
+using_runpod()
 }
 \value{
 A logical value
@@ -26,4 +29,5 @@ using_container()
 using_docker_container()
 using_podman_container()
 using_kubernetes()
+using_runpod()
 }
