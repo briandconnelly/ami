@@ -1,5 +1,7 @@
 # ami (development version)
 
+* Added `using_runpod()` to detect RunPod.io environments (#32)
+
 # ami 0.2.1
 
 * Added `using_positron()` and helpers `using_positron_desktop()` and `using_positron_server()` to detect the Positron IDE (#29)
