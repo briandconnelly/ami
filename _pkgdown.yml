@@ -32,6 +32,7 @@ reference:
     - using_docker_container
     - using_podman_container
     - using_kubernetes
+    - using_runpod
 
   - title: R, IDEs, and Programming Environment
     desc: Detect the R environment being used
