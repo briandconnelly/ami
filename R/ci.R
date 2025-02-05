@@ -61,18 +61,6 @@ using_codebuild <- function() {
 
 
 #' @rdname ci
-#' @description `using_github_actions()` reports whether GitHub Actions is being
-#'   used
-#' @export
-#' @examples
-#' using_github_actions()
-using_github_actions <- function() {
-  # Via https://github.com/r-lib/lintr/blob/3009505944493acdaeeec6ff819acede1f39250a/R/actions.R#L1 # nolint: line_length_linter
-  using_envvar("GITHUB_ACTIONS", value = "true")
-}
-
-
-#' @rdname ci
 #' @description `using_gitlab_ci()` reports whether GitLab CI/CD is being used
 #' @export
 #' @examples

@@ -47,6 +47,7 @@ reference:
     - using_interactive_session
     - using_conda
     - using_python_venv
+    - using_github_codespaces
 
   - title: Continuous Integration
     desc: Determine whether code is being run in a continuous integration environment
