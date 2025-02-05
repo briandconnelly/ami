@@ -56,19 +56,6 @@ test_that("using_codebuild() works as expected", {
 })
 
 
-test_that("using_github_actions() works as expected", {
-  withr::with_envvar(
-    new = c("GITHUB_ACTIONS" = "true"),
-    expect_true(using_github_actions())
-  )
-
-  withr::with_envvar(
-    new = c("GITHUB_ACTIONS" = NA),
-    expect_false(using_github_actions())
-  )
-})
-
-
 test_that("using_gitlab_ci() works as expected", {
   withr::with_envvar(
     new = c("GITLAB_CI" = "true"),

@@ -5,7 +5,6 @@
 \alias{using_appveyor}
 \alias{using_circle_ci}
 \alias{using_codebuild}
-\alias{using_github_actions}
 \alias{using_gitlab_ci}
 \alias{using_jenkins}
 \alias{using_travis_ci}
@@ -18,8 +17,6 @@ using_appveyor()
 using_circle_ci()
 
 using_codebuild()
-
-using_github_actions()
 
 using_gitlab_ci()
 
@@ -44,9 +41,6 @@ environment is being used.
 
 \code{using_codebuild()} reports whether AWS CodeBuild is being used
 
-\code{using_github_actions()} reports whether GitHub Actions is being
-used
-
 \code{using_gitlab_ci()} reports whether GitLab CI/CD is being used
 
 \code{using_jenkins()} reports whether Jenkins is being used
@@ -58,7 +52,6 @@ using_ci()
 using_appveyor()
 using_circle_ci()
 using_codebuild()
-using_github_actions()
 using_gitlab_ci()
 using_jenkins()
 using_travis_ci()
