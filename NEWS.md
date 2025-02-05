@@ -1,7 +1,7 @@
 # ami (development version)
 
 * Added `using_runpod()` to detect RunPod.io environments (#32)
-* Added `using_github_codespaces()` to detect GitHub Codespaces environments
+* Added `using_github_codespaces()` to detect GitHub Codespaces environments (#35)
 
 # ami 0.2.1
 
