@@ -10,7 +10,7 @@ online()
 using_host(hostname)
 }
 \arguments{
-\item{hostname}{String containing a hostname or hostnames to check}
+\item{hostname}{String containing a hostname to check}
 }
 \value{
 A logical value

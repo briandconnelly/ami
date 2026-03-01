@@ -30,5 +30,5 @@ determine whether those specific
 environments are being used.
 }
 \examples{
-using_rstudio()
+using_positron()
 }

@@ -27,6 +27,6 @@ used
 using_github_codespaces()
 
 # Check if the 'octocat-literate-space-parakeet-mld5' codespace is being used
-using_python_venv(env = "octocat-literate-space-parakeet-mld5")
+using_github_codespaces(name = "octocat-literate-space-parakeet-mld5")
 using_github_actions()
 }

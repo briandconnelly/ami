@@ -49,6 +49,15 @@ reference:
     - using_python_venv
     - using_github_codespaces
 
+  - title: AI Coding Agents
+    desc: Detect AI coding agent environments
+    contents:
+    - using_coding_agent
+    - using_claude_code
+    - using_gemini_cli
+    - using_goose
+    - using_opencode
+
   - title: Continuous Integration
     desc: Determine whether code is being run in a continuous integration environment
     contents:
