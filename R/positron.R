@@ -25,7 +25,7 @@ using_positron <- function(mode = "any") {
   )
 
   if (mode == "any") {
-    using_envvar("POSITRON_MODE")
+    using_envvar("POSITRON", value = "1")
   } else {
     using_envvar("POSITRON_MODE", value = mode)
   }
