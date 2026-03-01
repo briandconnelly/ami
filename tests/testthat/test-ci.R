@@ -71,13 +71,19 @@ test_that("using_gitlab_ci() works as expected", {
 
 test_that("using_jenkins() works as expected", {
   withr::with_envvar(
-    new = c("BUILD_ID" = "true"),
-    expect_true(using_jenkins())
+    new = c("JENKINS_URL" = "https://jenkins.example.com/"),
+    {
+      expect_true(using_jenkins())
+      expect_true(using_ci(service = "jenkins"))
+    }
   )
 
   withr::with_envvar(
-    new = c("BUILD_ID" = NA),
-    expect_false(using_jenkins())
+    new = c("JENKINS_URL" = NA),
+    {
+      expect_false(using_jenkins())
+      expect_false(using_ci(service = "jenkins"))
+    }
   )
 })
 

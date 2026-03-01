@@ -12,6 +12,11 @@ A logical value
 \description{
 Detect whether code is running in Visual Studio Code
 }
+\note{
+Detection relies on the \code{TERM_PROGRAM} environment variable, which is
+only set in VS Code's integrated terminal. Code running in a background R
+session (e.g. via the R extension) will not be detected.
+}
 \examples{
 using_vscode()
 }

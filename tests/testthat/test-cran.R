@@ -1,3 +1,20 @@
+test_that("on_cran() validates input properly", {
+  expect_error(
+    on_cran(n_cran_envvars = "five"),
+    class = "arg_not_scalar_integer"
+  )
+  expect_error(
+    on_cran(n_cran_envvars = c(3L, 5L)),
+    class = "arg_not_scalar_integer"
+  )
+  expect_error(on_cran(n_cran_envvars = NULL), class = "arg_not_scalar_integer")
+  expect_error(on_cran(cran_pattern = NULL), class = "arg_not_scalar_string")
+  expect_error(
+    on_cran(cran_pattern = NA_character_),
+    class = "arg_not_scalar_string"
+  )
+})
+
 test_that("on_cran() works as expected", {
   withr::with_envvar(
     new = c("NOT_CRAN" = "true"),

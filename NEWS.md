@@ -1,5 +1,8 @@
 # ami (development version)
 
+* Added `using_coding_agent()` and helpers `using_claude_code()`,
+  `using_cline()`, `using_codex()`, `using_gemini_cli()`, `using_goose()`, and
+  `using_opencode()` to detect AI coding agent environments
 * Added `using_runpod()` to detect RunPod.io environments (#32)
 * Added `using_github_codespaces()` to detect GitHub Codespaces environments (#35)
 

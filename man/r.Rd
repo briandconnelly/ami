@@ -13,10 +13,10 @@ using_latest_r_version()
 using_interactive_session()
 }
 \arguments{
-\item{ver}{Version string}
+\item{ver}{Version string or character vector of version strings}
 }
 \value{
-A logical value
+A logical vector
 }
 \description{
 Get information about the R environment being used.
