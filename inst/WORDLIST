@@ -3,6 +3,7 @@ CMD
 CircleCI
 CodeBuild
 Codecov
+Codespaces
 Conda
 Databricks
 GitLab
@@ -10,10 +11,12 @@ Lifecycle
 ORCID
 RStudio
 Revilla
-config
+RunPod
+codespace
 covr
+entrypoint
 github
 hostname
-hostnames
 https
+io
 testthat
