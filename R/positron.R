@@ -16,7 +16,7 @@
 #' @export
 #'
 #' @examples
-#' using_rstudio()
+#' using_positron()
 using_positron <- function(mode = "any") {
   mode <- rlang::arg_match(
     arg = mode,

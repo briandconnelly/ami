@@ -76,7 +76,7 @@ using_gitlab_ci <- function() {
 #' @examples
 #' using_jenkins()
 using_jenkins <- function() {
-  using_envvar("BUILD_ID")
+  using_envvar("JENKINS_URL")
 }
 
 

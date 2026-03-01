@@ -5,8 +5,8 @@
 #'
 #' `using_r_version()` determines whether or not a particular version of R is
 #' being used.
-#' @param ver Version string
-#' @return A logical value
+#' @param ver Version string or character vector of version strings
+#' @return A logical vector
 #' @export
 #' @examples
 #' using_r_version(ver = "4.3.0")
@@ -32,7 +32,7 @@ using_latest_r_version <- function() {
 #' @export
 #' @examples
 #' using_interactive_session()
-using_interactive_session <- rlang::is_interactive
+using_interactive_session <- function() rlang::is_interactive()
 
 
 #' @noRd

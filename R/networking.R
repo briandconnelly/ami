@@ -14,10 +14,11 @@ online <- function() {
 }
 
 #' @rdname networking
-#' @param hostname String containing a hostname or hostnames to check
+#' @param hostname String containing a hostname to check
 #' @export
 #' @examples
 #' using_host("somehost.fakedomain.com")
 using_host <- function(hostname) {
+  assert_string(hostname)
   unname(Sys.info()["nodename"] == hostname)
 }
