@@ -36,9 +36,15 @@ using_interactive_session <- function() rlang::is_interactive()
 
 
 #' @noRd
-get_latest_r_version <- function(news_url = "https://cloud.r-project.org/doc/manuals/r-release/NEWS.html") { # nolint: line_length_linter
-  contents <- readLines(news_url)
-  releases <- contents[grep("CHANGES IN R [0-9]+\\.[0-9]+\\.[0-9]+", contents)]
-
-  package_version(sub("</h3>$", "", sub(".*CHANGES IN R ", "", releases[[1]])))
+get_latest_r_version <- function(url = "https://cran.r-project.org/src/base/VERSION-INFO.dcf") { # nolint: line_length_linter
+  tryCatch(
+    {
+      con <- url(url, open = "rt")
+      on.exit(close(con))
+      package_version(read.dcf(con, fields = "Release")[1L, "Release"])
+    },
+    error = function(e) {
+      rlang::abort("Could not retrieve the latest R version", parent = e)
+    }
+  )
 }

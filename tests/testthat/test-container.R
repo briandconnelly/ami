@@ -1,7 +1,10 @@
 test_that("using_container() works as expected", {
   expect_equal(
     using_container(),
-    using_docker_container() || using_podman_container() || using_kubernetes() || using_runpod()
+    using_docker_container() ||
+      using_podman_container() ||
+      using_kubernetes() ||
+      using_runpod()
   )
 })
 

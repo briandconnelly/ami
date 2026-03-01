@@ -7,7 +7,10 @@
 #' @examples
 #' using_container()
 using_container <- function() {
-  using_docker_container() || using_podman_container() || using_kubernetes() || using_runpod()
+  using_docker_container() ||
+    using_podman_container() ||
+    using_kubernetes() ||
+    using_runpod()
 }
 
 
