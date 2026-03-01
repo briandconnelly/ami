@@ -14,8 +14,18 @@ assert_string <- function(x, na_ok = FALSE, null_ok = FALSE) {
   invisible(x)
 }
 
-assert_integer <- function(x, len = 1L, null_ok = FALSE) {
+check_integer <- function(x, len = 1L, null_ok = FALSE) {
   rlang::is_integerish(x, n = len) ||
     (length(x) == 1L && is.na(x) && isTRUE(null_ok)) ||
     (is.null(x) && isTRUE(null_ok))
+}
+
+assert_integer <- function(x, len = 1L, null_ok = FALSE) {
+  if (!check_integer(x, len, null_ok)) {
+    rlang::abort(
+      message = glue::glue("`{deparse(x)}` is not an integer scalar"),
+      class = "arg_not_scalar_integer"
+    )
+  }
+  invisible(x)
 }
