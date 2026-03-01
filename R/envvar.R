@@ -18,7 +18,6 @@ using_envvar <- function(x, value = NULL) {
   if (is.null(value)) {
     !is.na(curr)
   } else {
-    assert_string(value)
     identical(curr, value)
   }
 }

@@ -44,7 +44,7 @@ test_that("using_rstudio_product validates input properly", {
 })
 
 test_that("using_rstudio_product works as expected when `RSTUDIO_PRODUCT` not set", { # nolint: line_length_linter
-  withr::local_envvar(list("USING_RSTUDIO_PRODUCT" = NA))
+  withr::local_envvar(list("RSTUDIO_PRODUCT" = NA))
   expect_false(using_rstudio_product())
   expect_false(using_rstudio_product(name = "CONNECT"))
   expect_false(using_posit_connect())
