@@ -54,6 +54,8 @@ reference:
     contents:
     - using_coding_agent
     - using_claude_code
+    - using_cline
+    - using_codex
     - using_gemini_cli
     - using_goose
     - using_opencode

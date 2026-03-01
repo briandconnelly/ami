@@ -5,8 +5,9 @@
 #' agent environment.
 #'
 #' `using_coding_agent()` checks for any known coding agent.
-#' `using_claude_code()`, `using_gemini_cli()`, `using_goose()`, and
-#' `using_opencode()` check for specific agents.
+#' `using_claude_code()`, `using_cline()`, `using_codex()`,
+#' `using_gemini_cli()`, `using_goose()`, and `using_opencode()` check for
+#' specific agents.
 #'
 #' @return A logical value
 #' @export
@@ -16,6 +17,8 @@
 using_coding_agent <- function() {
   using_envvar("AGENT", value = "1") ||
     using_claude_code() ||
+    using_cline() ||
+    using_codex() ||
     using_gemini_cli() ||
     using_goose() ||
     using_opencode()
@@ -51,6 +54,26 @@ using_claude_code <- function(entrypoint = NULL) {
   } else {
     TRUE
   }
+}
+
+
+#' @rdname coding_agent
+#' @export
+#'
+#' @examples
+#' using_cline()
+using_cline <- function() {
+  using_envvar("CLINE_ACTIVE", value = "true")
+}
+
+
+#' @rdname coding_agent
+#' @export
+#'
+#' @examples
+#' using_codex()
+using_codex <- function() {
+  using_envvar("CODEX_SANDBOX", value = "1")
 }
 
 

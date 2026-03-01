@@ -1,7 +1,8 @@
 test_that("using_coding_agent() works as expected", {
   withr::with_envvar(
     new = c(
-      "AGENT" = NA, "CLAUDECODE" = NA, "GEMINI_CLI" = NA,
+      "AGENT" = NA, "CLAUDECODE" = NA, "CLINE_ACTIVE" = NA,
+      "CODEX_SANDBOX" = NA, "GEMINI_CLI" = NA,
       "GOOSE_TERMINAL" = NA, "OPENCODE" = NA
     ),
     expect_false(using_coding_agent())
@@ -39,6 +40,32 @@ test_that("using_claude_code() works as expected when `CLAUDECODE` is set", {
   expect_true(using_claude_code())
   expect_true(using_claude_code(entrypoint = "cli"))
   expect_false(using_claude_code(entrypoint = "ide"))
+})
+
+
+test_that("using_cline() works as expected", {
+  withr::with_envvar(
+    new = c("CLINE_ACTIVE" = "true"),
+    expect_true(using_cline())
+  )
+
+  withr::with_envvar(
+    new = c("CLINE_ACTIVE" = NA),
+    expect_false(using_cline())
+  )
+})
+
+
+test_that("using_codex() works as expected", {
+  withr::with_envvar(
+    new = c("CODEX_SANDBOX" = "1"),
+    expect_true(using_codex())
+  )
+
+  withr::with_envvar(
+    new = c("CODEX_SANDBOX" = NA),
+    expect_false(using_codex())
+  )
 })
 
 

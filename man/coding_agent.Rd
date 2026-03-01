@@ -3,6 +3,8 @@
 \name{using_coding_agent}
 \alias{using_coding_agent}
 \alias{using_claude_code}
+\alias{using_cline}
+\alias{using_codex}
 \alias{using_gemini_cli}
 \alias{using_goose}
 \alias{using_opencode}
@@ -11,6 +13,10 @@
 using_coding_agent()
 
 using_claude_code(entrypoint = NULL)
+
+using_cline()
+
+using_codex()
 
 using_gemini_cli()
 
@@ -31,8 +37,9 @@ These functions determine whether code is being run within an AI coding
 agent environment.
 
 \code{using_coding_agent()} checks for any known coding agent.
-\code{using_claude_code()}, \code{using_gemini_cli()}, \code{using_goose()}, and
-\code{using_opencode()} check for specific agents.
+\code{using_claude_code()}, \code{using_cline()}, \code{using_codex()},
+\code{using_gemini_cli()}, \code{using_goose()}, and \code{using_opencode()} check for
+specific agents.
 }
 \examples{
 using_coding_agent()
@@ -40,6 +47,8 @@ using_claude_code()
 
 # Check for a specific entrypoint
 using_claude_code(entrypoint = "cli")
+using_cline()
+using_codex()
 using_gemini_cli()
 using_goose()
 using_opencode()
