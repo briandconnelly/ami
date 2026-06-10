@@ -25,13 +25,16 @@ Get information about the R environment being used.
 being used.
 
 \code{using_latest_r_version()} determines whether or not the latest stable
-version of R is being used.
+version of R is being used. It returns \code{NA} if the latest version cannot
+be retrieved (e.g. when offline or the CRAN resource is unavailable).
 
 \code{using_interactive_session()} determines whether or not R is
 being run interactively.
 }
 \examples{
 using_r_version(ver = "4.3.0")
+\donttest{
 using_latest_r_version()
+}
 using_interactive_session()
 }
