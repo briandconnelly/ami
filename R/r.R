@@ -17,12 +17,19 @@ using_r_version <- function(ver) {
 #' @rdname r
 #' @description
 #' `using_latest_r_version()` determines whether or not the latest stable
-#' version of R is being used.
+#' version of R is being used. It returns `NA` if the latest version cannot
+#' be retrieved (e.g. when offline or the CRAN resource is unavailable).
 #' @export
 #' @examples
+#' \donttest{
 #' using_latest_r_version()
+#' }
 using_latest_r_version <- function() {
-  using_r_version(get_latest_r_version())
+  latest <- get_latest_r_version()
+  if (is.null(latest)) {
+    return(NA)
+  }
+  using_r_version(latest)
 }
 
 
@@ -36,15 +43,18 @@ using_interactive_session <- function() rlang::is_interactive()
 
 
 #' @noRd
-get_latest_r_version <- function(url = "https://cran.r-project.org/src/base/VERSION-INFO.dcf") { # nolint: line_length_linter
+get_latest_r_version <- function(
+  url = "https://cran.r-project.org/src/base/VERSION-INFO.dcf"
+) {
   tryCatch(
-    {
+    suppressWarnings({
       con <- url(url, open = "rt")
       on.exit(close(con))
       package_version(read.dcf(con, fields = "Release")[1L, "Release"])
-    },
+    }),
     error = function(e) {
-      rlang::abort("Could not retrieve the latest R version", parent = e)
+      message("Could not retrieve the latest R version: ", conditionMessage(e))
+      NULL
     }
   )
 }

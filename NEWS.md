@@ -5,6 +5,10 @@
   `using_opencode()` to detect AI coding agent environments
 * Added `using_runpod()` to detect RunPod.io environments (#32)
 * Added `using_github_codespaces()` to detect GitHub Codespaces environments (#35)
+* `using_latest_r_version()` now fails gracefully, returning `NA` instead of
+  raising an error when the latest R version cannot be retrieved (e.g. when
+  offline). Its example is now wrapped in `\donttest{}` so checks no longer
+  rely on network access.
 
 # ami 0.2.1
 
