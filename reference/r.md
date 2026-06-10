@@ -6,7 +6,8 @@ Get information about the R environment being used.
 is being used.
 
 `using_latest_r_version()` determines whether or not the latest stable
-version of R is being used.
+version of R is being used. It returns `NA` if the latest version cannot
+be retrieved (e.g. when offline or the CRAN resource is unavailable).
 
 `using_interactive_session()` determines whether or not R is being run
 interactively.
@@ -36,8 +37,10 @@ A logical vector
 ``` r
 using_r_version(ver = "4.3.0")
 #> [1] FALSE
+# \donttest{
 using_latest_r_version()
 #> [1] TRUE
+# }
 using_interactive_session()
 #> [1] FALSE
 ```

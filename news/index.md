@@ -21,6 +21,11 @@
   [`using_github_codespaces()`](https://briandconnelly.github.io/ami/reference/github.md)
   to detect GitHub Codespaces environments
   ([\#35](https://github.com/briandconnelly/ami/issues/35))
+- [`using_latest_r_version()`](https://briandconnelly.github.io/ami/reference/r.md)
+  now fails gracefully, returning `NA` instead of raising an error when
+  the latest R version cannot be retrieved (e.g. when offline). Its
+  example is now wrapped in `\donttest{}` so checks no longer rely on
+  network access.
 
 ## ami 0.2.1
 

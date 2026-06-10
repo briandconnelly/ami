@@ -13,6 +13,7 @@ quickly create a lot of dependencies for your own projects.
 You can install the latest released version of ami by running:
 
 ``` r
+
 install.packages("ami")
 ```
 
@@ -20,6 +21,7 @@ If you’d like to try out the development version of ami, you can install
 directly from GitHub:
 
 ``` r
+
 # install.packages("remotes")
 remotes::install_github("briandconnelly/ami")
 ```
@@ -29,6 +31,7 @@ remotes::install_github("briandconnelly/ami")
 ### Am I online?
 
 ``` r
+
 ami::online()
 #> [1] TRUE
 ```
@@ -36,6 +39,7 @@ ami::online()
 ### Am I using RStudio? Am I using a dark theme?
 
 ``` r
+
 ami::using_rstudio()
 #> [1] FALSE
 
@@ -46,6 +50,7 @@ ami::using_rstudio_dark_theme()
 ### Am I using macOS and an Intel Mac?
 
 ``` r
+
 ami::using_macos() && ami::using_x86_cpu()
 #> [1] FALSE
 ```
@@ -53,6 +58,7 @@ ami::using_macos() && ami::using_x86_cpu()
 ### Are we running in a Docker container?
 
 ``` r
+
 ami::using_docker_container()
 #> [1] FALSE
 ```
@@ -60,6 +66,7 @@ ami::using_docker_container()
 ### Are we using a continuous integration service? GitHub Actions?
 
 ``` r
+
 ami::using_ci()
 #> [1] FALSE
 
@@ -74,6 +81,7 @@ see if we’re running in a [Poetry](https://python-poetry.org)
 environment:
 
 ``` r
+
 ami::using_envvar("POETRY_ACTIVE")
 #> [1] FALSE
 ```
@@ -83,6 +91,7 @@ We can also check for package options. Here, we’ll see whether
 parallel bootstrapping using multiple cores:
 
 ``` r
+
 ami::using_option("boot.parallel", "multicore")
 #> [1] FALSE
 ```
